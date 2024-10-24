@@ -34,3 +34,42 @@
     <%= link_to "En savoir plus", how_it_works_path, class: "btn btn-primary" %>
   </div>
 </div>
+
+<section id="our-rooms" class="pt-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Rooms</h2>
+    <div id="communityCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="<%= image_path('how_it_works_1.jpg') %>" class="img-fluid" alt="Room 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Room 1</h5>
+            <p>Description of Room 1.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="<%= image_path('how_it_works_2.jpg') %>" class="img-fluid" alt="Room 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Room 2</h5>
+            <p>Description of Room 2.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="<%= image_path('how_it_works_3.jpg') %>" class="img-fluid" alt="Room 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Room 3</h5>
+            <p>Description of Room 3.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#communityCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#communityCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
