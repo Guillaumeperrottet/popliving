@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-logo">
+      <%= link_to image_tag('logo.png', alt: 'Logo'), root_path %>
+    </div>
+    <ul class="navbar-links">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "How it Works", how_it_works_path %></li>
+      <li><%= link_to "Booking", booking_path %></li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+    </ul>
+    <div class="navbar-cta">
+      <%= link_to "Book Now", booking_path, class: "btn-cta" %>
+    </div>
+  </div>
+</nav>
