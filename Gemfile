@@ -33,6 +33,8 @@ gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "bootstrap", "~> 5.2"
 
+gem 'pg', group: :production
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
