@@ -1,17 +1,28 @@
-<nav class="navbar">
-  <div class="navbar-container">
-    <div class="navbar-logo">
-      <%= link_to image_tag('logo.png', alt: 'Logo'), root_path %>
-    </div>
-    <ul class="navbar-links">
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "How it Works", how_it_works_path %></li>
-      <li><%= link_to "Booking", booking_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-    </ul>
-    <div class="navbar-cta">
-      <%= link_to "Book Now", booking_path, class: "btn-cta" %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to image_tag('logo.png', alt: 'Logo'), root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "How It Works", how_it_works_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Booking", booking_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About", about_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", contact_path, class: "nav-link" %>
+        </li>
+      </ul>
+      <%= link_to "Book Now", booking_path, class: "btn btn-primary ms-lg-3" %>
     </div>
   </div>
 </nav>

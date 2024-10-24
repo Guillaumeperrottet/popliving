@@ -1,0 +1,75 @@
+.hero-section {
+  position: relative;
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  display: flex;
+  align-items: center; /* Aligne le contenu verticalement au centre */
+  justify-content: space-between; /* Aligne le contenu horizontalement */
+  padding-top: 5rem; /* Espace pour la navbar */
+}
+
+.hero-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero-subtext {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.hero-image {
+  max-width: 100%; /* Pour s'assurer que l'image est responsive */
+  height: auto;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+.how-it-works-section {
+  padding: 100px 0;
+}
+
+.how-it-works-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.how-it-works-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.how-it-works-section p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.how-it-works-section .btn-primary {
+  background-color: #ff5722;
+  border-color: #ff5722;
+  font-weight: bold;
+}
+
+.how-it-works-section .btn-primary:hover {
+  background-color: #e64a19;
+  border-color: #e64a19;
+}

@@ -1,1 +1,36 @@
-<h1>Home page</h1>
+<div class="container hero-section">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h1 class="hero-text">Une phrase inspirante ou un titre ici</h1>
+      <p class="hero-subtext">Un texte descriptif ici pour ajouter plus d'informations.</p>
+      <%= link_to "En savoir plus", about_path, class: "btn btn-primary mt-3" %>
+    </div>
+    <div class="col-lg-6">
+      <img src="<%= image_path('your-image.jpg') %>" alt="Une belle image" class="img-fluid hero-image">
+    </div>
+  </div>
+</div>
+
+<div class="container how-it-works-section">
+  <h2 class="text-center mb-5">How It Works</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="<%= image_path('how_it_works_1.jpg') %>" alt="Step 1" class="img-fluid mb-3">
+      <h3>Étape 1</h3>
+      <p>Description de l'étape 1.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="<%= image_path('how_it_works_2.jpg') %>" alt="Step 2" class="img-fluid mb-3">
+      <h3>Étape 2</h3>
+      <p>Description de l'étape 2.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="<%= image_path('how_it_works_3.jpg') %>" alt="Step 3" class="img-fluid mb-3">
+      <h3>Étape 3</h3>
+      <p>Description de l'étape 3.</p>
+    </div>
+  </div>
+  <div class="text-center mt-5">
+    <%= link_to "En savoir plus", how_it_works_path, class: "btn btn-primary" %>
+  </div>
+</div>
