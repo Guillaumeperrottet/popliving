@@ -4,7 +4,8 @@
   display: flex;
   align-items: center; /* Aligne le contenu verticalement au centre */
   justify-content: space-between; /* Aligne le contenu horizontalement */
-  padding-top: 5rem; /* Espace pour la navbar */
+  padding-top: 5rem; /*
+   Espace pour la navbar */
 }
 
 .hero-text {
@@ -21,9 +22,12 @@
 }
 
 .hero-image {
-  max-width: 100%; /* Pour s'assurer que l'image est responsive */
+  max-width: 130%; /* Pour s'assurer que l'image est responsive */
   height: auto;
   z-index: -1;
+  margin-left: auto;
+  margin-right: 0;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -142,6 +146,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 
     &:hover {
       transform: translateY(-10px); // Effet de soulèvement

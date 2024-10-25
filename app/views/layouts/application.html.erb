@@ -11,6 +11,12 @@
   </head>
 
   <body class="d-flex flex-column min-vh-100">
+    <% flash.each do |key, message| %>
+      <div class="alert <%= "alert-#{key}" %>">
+        <%= message %>
+      </div>
+    <% end %>
+
     <%= render 'shared/navbar' %>
     <main class="flex-grow-1">
       <%= yield %> <!-- Contenu principal -->
