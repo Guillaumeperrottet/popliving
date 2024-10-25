@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :show_maintenance
+  # before_action :show_maintenance
 
   private
 
