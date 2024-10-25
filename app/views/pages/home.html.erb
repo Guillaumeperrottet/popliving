@@ -6,7 +6,7 @@
       <%= link_to "En savoir plus", about_path, class: "btn btn-primary mt-3" %>
     </div>
     <div class="col-lg-6">
-      <img src="<%= image_path('manger_ensemble.jpg') %>" alt="Une belle image" class="img-fluid hero-image">
+      <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845225/manger_ensemble_xbgbvh.jpg') %>" alt="Une belle image" class="img-fluid hero-image">
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= image_path('how_it_works_1.jpg') %>" alt="Step 1" class="img-fluid mb-3">
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_1_n037de.jpg') %>" alt="Step 1" class="img-fluid mb-3">
           <h3>Chambre simple</h3>
           <p>Description de l'étape 1.</p>
         </div>
@@ -38,7 +38,7 @@
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= image_path('how_it_works_2.jpg') %>" alt="Step 2" class="img-fluid mb-3">
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_3_dnatwb.jpg') %>" alt="Step 2" class="img-fluid mb-3">
           <h3>Studio indépendant</h3>
           <p>Description de l'étape 2.</p>
         </div>
@@ -47,7 +47,7 @@
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= image_path('how_it_works_3.jpg') %>" alt="Step 3" class="img-fluid mb-3">
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_2_fz8c7n.jpg') %>" alt="Step 3" class="img-fluid mb-3">
           <h3>Appartement partagé</h3>
           <p>Description de l'étape 3.</p>
         </div>
