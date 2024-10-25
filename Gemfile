@@ -32,6 +32,10 @@ gem 'sassc-rails'
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "bootstrap", "~> 5.2"
+gem 'cloudinary'
+gem 'activestorage-cloudinary-service'
+gem 'dotenv-rails', groups: [:development, :test]
+
 
 gem 'pg', group: :production
 

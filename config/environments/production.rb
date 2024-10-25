@@ -40,6 +40,8 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
 
+  config.active_storage.service = :cloudinary
+
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
 
