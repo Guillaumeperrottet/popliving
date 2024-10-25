@@ -7,7 +7,7 @@ class BookingsController < ApplicationController
       puts "Booking successfully saved: #{@booking.inspect}"  # Message de confirmation
 
       BookingMailer.new_booking(@booking).deliver_now
-      redirect_to new_booking_path, notice: "Votre demande de réservation a bien été envoyée."
+      redirect_to new_booking_path, notice: "Votre demande a bien été envoyée."
     else
       puts "Booking failed to save: #{@booking.errors.full_messages}"  # Affiche les erreurs de validation
 
