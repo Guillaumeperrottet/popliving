@@ -3,5 +3,10 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
   get "how-it-works", to: "pages#how_it_works"
-  get "booking", to: "pages#booking"
+
+  # Route pour afficher le formulaire de réservation (pages#booking)
+  get "booking", to: "bookings#new", as: "new_booking"
+
+  # Routes pour la création des réservations (formulaire)
+  resources :bookings, only: [:create]
 end

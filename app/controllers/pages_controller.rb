@@ -12,5 +12,6 @@ class PagesController < ApplicationController
   end
 
   def booking
+    @booking = Booking.new
   end
 end

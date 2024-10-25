@@ -1,0 +1,39 @@
+.faq-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: -100px; // Ajuste cette valeur pour positionner le titre
+}
+
+.faq-section {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 50px 0;
+
+  .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+  }
+
+  .accordion-button {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    &:not(.collapsed) {
+      color: #007bff;
+      background-color: #e7f1ff;
+    }
+  }
+
+  .accordion-body {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .text-center {
+    text-align: center !important;
+    margin-bottom: 60px;
+  }
+}

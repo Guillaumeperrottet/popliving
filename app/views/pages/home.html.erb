@@ -6,7 +6,7 @@
       <%= link_to "En savoir plus", about_path, class: "btn btn-primary mt-3" %>
     </div>
     <div class="col-lg-6">
-      <img src="<%= image_path('your-image.jpg') %>" alt="Une belle image" class="img-fluid hero-image">
+      <img src="<%= image_path('manger_ensemble.jpg') %>" alt="Une belle image" class="img-fluid hero-image">
     </div>
   </div>
 </div>
@@ -19,7 +19,7 @@
       Nous partageons notre espace de vie pour créer des liens, échanger des expériences et évoluer ensemble
       en tant que communauté.
     </p>
-    <%= link_to "En savoir plus", about_path, class: "btn btn-primary" %>
+    <%= link_to "Questions", about_path, class: "btn btn-primary" %>
   </div>
 </div>
 
@@ -27,7 +27,7 @@
   <h2 class="text-center mb-5">Nos chambres</h2>
   <div class="row text-center">
     <div class="col-md-4">
-      <%= link_to booking_path, class: "room-card-link" do %>
+      <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
           <img src="<%= image_path('how_it_works_1.jpg') %>" alt="Step 1" class="img-fluid mb-3">
           <h3>Chambre simple</h3>
@@ -36,7 +36,7 @@
       <% end %>
     </div>
     <div class="col-md-4">
-      <%= link_to booking_path, class: "room-card-link" do %>
+      <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
           <img src="<%= image_path('how_it_works_2.jpg') %>" alt="Step 2" class="img-fluid mb-3">
           <h3>Studio indépendant</h3>
@@ -45,7 +45,7 @@
       <% end %>
     </div>
     <div class="col-md-4">
-      <%= link_to booking_path, class: "room-card-link" do %>
+      <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
           <img src="<%= image_path('how_it_works_3.jpg') %>" alt="Step 3" class="img-fluid mb-3">
           <h3>Appartement partagé</h3>
@@ -55,7 +55,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <%= link_to "En savoir plus", booking_path, class: "btn btn-primary" %>
+    <%= link_to "En savoir plus", new_booking_path, class: "btn btn-primary" %>
   </div>
 </div>
 <div class="container-fluid services-section d-flex align-items-center justify-content-center">
