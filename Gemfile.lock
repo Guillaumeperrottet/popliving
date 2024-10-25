@@ -298,6 +298,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activestorage (~> 7.1)
   activestorage-cloudinary-service
   autoprefixer-rails
   bootsnap
