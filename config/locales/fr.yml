@@ -2,7 +2,7 @@ fr:
   home:
     hero:
       title: "Une phrase inspirante ou un titre ici"
-      description: "Un texte descriptif ici pour ajouter plus d'informations."
+      description: "L'habitat flexible, courte et longue durée"
       learn_more: "En savoir plus"
       image_alt: "Une belle image"
     concept:
@@ -12,11 +12,29 @@ fr:
     rooms:
       title: "Nos chambres"
       simple_room_title: "Chambre simple"
-      simple_room_description: "Description de l'étape 1."
+      simple_room_description: |
+            WC/Douche individuel
+            Cuisine communautaire
+            TV/WIFI/Chromecast
+            Literie confortable
+            Service de conciergerie
+            Laundry
       studio_title: "Studio indépendant"
-      studio_description: "Description de l'étape 2."
+      studio_description: |
+            WC/Douche individuel
+            Cuisine équipée
+            TV/WIFI/Chromecast
+            Literie confortable
+            Service de conciergerie
+            Laundry
       shared_apartment_title: "Appartement partagé"
-      shared_apartment_description: "Description de l'étape 3."
+      shared_apartment_description: |
+            WC/Douche partagé
+            Cuisine équipée
+            TV/WIFI/Chromecast
+            Literie confortable
+            Service de conciergerie
+            Laundry
       learn_more: "En savoir plus"
       simple_room_image_alt: "Image de la chambre simple"
       studio_image_alt: "Image du studio indépendant"
@@ -55,11 +73,10 @@ fr:
 
   navbar:
     home: "Accueil"
-    how_it_works: "Comment ça marche"
-    booking: "Réservation"
+    concept: "Concept"
     about: "FAQ"
     contact: "Contact"
-    book_now: "Réservez maintenant"
+    book_now: "Demande de disponibilité"
 
   about:
       faq:
@@ -80,3 +97,17 @@ fr:
           q5:
             title: "Puis-je venir avec un animal de compagnie ?"
             answer: "Non, malheureusement, nous ne pouvons pas accepter d’animaux dans le bâtiment en raison du manque d'espace, des allergies et pour des raisons de propreté."
+
+  footer:
+    about:
+      title: "À propos"
+      description: "Le coliving s’adresse à ceux qui apprécient vivre avec d'autres et faire partie d'une communauté. Nous partageons notre espace de vie pour créer des liens, échanger des expériences et évoluer ensemble en tant que communauté."
+    quick_links:
+      title: "Liens rapides"
+      home: "Home"
+      booking_request: "Demande de disponibilité"
+      faq: "FAQ"
+      contact: "Contact"
+    contact_us:
+      title: "Contactez-nous"
+    copyright: "&copy; 2024 Popliving. Tous droits réservés."

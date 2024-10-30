@@ -17,7 +17,7 @@
     <p class="concept-text mb-4">
       <%= t('home.concept.description') %>
     </p>
-    <%= link_to t('home.concept.questions'), about_path, class: "btn btn-primary" %>
+    <%= link_to t('home.concept.questions'), concept_path, class: "btn btn-primary" %>
   </div>
 </div>
 
@@ -27,27 +27,27 @@
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_1_n037de.jpg') %>" alt="<%= t('home.rooms.simple_room_image_alt') %>" class="img-fluid mb-3">
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276737/simple_z0wsk4_kacsuv.png') %>" alt="<%= t('home.rooms.simple_room_image_alt') %>" class="img-fluid mb-3">
           <h3><%= t('home.rooms.simple_room_title') %></h3>
-          <p><%= t('home.rooms.simple_room_description') %></p>
+          <p><%= simple_format(t('home.rooms.simple_room_description')) %></p>
         </div>
       <% end %>
     </div>
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_3_dnatwb.jpg') %>" alt="<%= t('home.rooms.studio_image_alt') %>" class="img-fluid mb-3">
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276689/inde%CC%81pendant_bgjug7_wt6zb6.png') %>" alt="<%= t('home.rooms.studio_image_alt') %>" class="img-fluid mb-3">
           <h3><%= t('home.rooms.studio_title') %></h3>
-          <p><%= t('home.rooms.studio_description') %></p>
+          <p><%= simple_format(t('home.rooms.studio_description'))%></p>
         </div>
       <% end %>
     </div>
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_2_fz8c7n.jpg') %>" alt="<%= t('home.rooms.shared_apartment_image_alt') %>" class="img-fluid mb-3">
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278168/paratge%CC%81_cn7vzz_fgamp3.png') %>" alt="<%= t('home.rooms.shared_apartment_image_alt') %>" class="img-fluid mb-3">
           <h3><%= t('home.rooms.shared_apartment_title') %></h3>
-          <p><%= t('home.rooms.shared_apartment_description') %></p>
+          <p><%= simple_format(t('home.rooms.shared_apartment_description')) %></p>
         </div>
       <% end %>
     </div>

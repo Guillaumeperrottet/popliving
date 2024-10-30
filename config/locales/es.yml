@@ -3,7 +3,7 @@ es:
   home:
     hero:
       title: "Una frase inspiradora o título aquí"
-      description: "Un texto descriptivo aquí para agregar más información."
+      description: "Estancia flexible, corta y larga duración"
       learn_more: "Saber más"
       image_alt: "Una imagen hermosa"
     concept:
@@ -13,11 +13,29 @@ es:
     rooms:
       title: "Nuestras Habitaciones"
       simple_room_title: "Habitación Simple"
-      simple_room_description: "Descripción del paso 1."
+      simple_room_description: |
+        WC/Ducha privada
+        Cocina comunitaria
+        TV/WIFI/Chromecast
+        Ropa de cama cómoda
+        Servicio de conserjería
+        Lavandería
       studio_title: "Estudio Independiente"
-      studio_description: "Descripción del paso 2."
+      studio_description: |
+        WC/Ducha privada
+        Cocina equipada
+        TV/WIFI/Chromecast
+        Ropa de cama cómoda
+        Servicio de conserjería
+        Lavandería
       shared_apartment_title: "Apartamento Compartido"
-      shared_apartment_description: "Descripción del paso 3."
+      shared_apartment_description:  |
+        WC/Ducha compartido
+        Cocina equipada
+        TV/WIFI/Chromecast
+        Ropa de cama cómoda
+        Servicio de conserjería
+        Lavandería
       learn_more: "Saber más"
       simple_room_image_alt: "Imagen de la habitación simple"
       studio_image_alt: "Imagen del estudio independiente"
@@ -56,11 +74,10 @@ es:
 
   navbar:
     home: "Inicio"
-    how_it_works: "Cómo Funciona"
-    booking: "Reserva"
+    concept: "Concepto"
     about: "Acerca de"
     contact: "Contacto"
-    book_now: "Reservar Ahora"
+    book_now: "Solicitud de disponibilidad"
 
   about:
     faq:
@@ -81,3 +98,17 @@ es:
         q5:
           title: "¿Puedo traer una mascota?"
           answer: "No, lamentablemente no podemos aceptar mascotas en el edificio debido a la falta de espacio, alergias y razones de limpieza."
+
+  footer:
+    about:
+      title: "Acerca de"
+      description: "El coliving es para quienes disfrutan vivir con otros y ser parte de una comunidad. Compartimos nuestro espacio de vida para crear vínculos, intercambiar experiencias y crecer juntos como comunidad."
+    quick_links:
+      title: "Enlaces Rápidos"
+      home: "Inicio"
+      booking_request: "Solicitud de disponibilidad"
+      faq: "FAQ"
+      contact: "Contacto"
+    contact_us:
+      title: "Contáctanos"
+    copyright: "&copy; 2024 Popliving. Todos los derechos reservados."
