@@ -20,18 +20,18 @@
         </li>
       </ul>
       <%= link_to t('navbar.book_now'), new_booking_path, class: "btn btn-primary ms-lg-3" %>
+
+      <div class="language-switcher">
+        <select id="language-select" class="form-select form-select-sm" onchange="changeLanguage(this)">
+          <option value="fr" <%= 'selected' if I18n.locale == :fr %>>FR</option>
+          <option value="en" <%= 'selected' if I18n.locale == :en %>>EN</option>
+          <option value="de" <%= 'selected' if I18n.locale == :de %>>DE</option>
+          <option value="pt" <%= 'selected' if I18n.locale == :pt %>>PT</option>
+          <option value="es" <%= 'selected' if I18n.locale == :es %>>ES</option>
+        </select>
+      </div></nav>
     </div>
   </div>
-  <div class="language-switcher">
-    <select id="language-select" class="form-select form-select-sm" onchange="changeLanguage(this)">
-      <option value="fr" <%= 'selected' if I18n.locale == :fr %>>FR</option>
-      <option value="en" <%= 'selected' if I18n.locale == :en %>>EN</option>
-      <option value="de" <%= 'selected' if I18n.locale == :de %>>DE</option>
-      <option value="pt" <%= 'selected' if I18n.locale == :pt %>>PT</option>
-      <option value="es" <%= 'selected' if I18n.locale == :es %>>ES</option>
-    </select>
-  </div>
-</nav>
 
 <script>
   function changeLanguage(select) {
