@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
-  get "how-it-works", to: "pages#how_it_works"
+  get "concept", to: "pages#concept"
 
   # Route pour afficher le formulaire de réservation (pages#booking)
   get "booking", to: "bookings#new", as: "new_booking"

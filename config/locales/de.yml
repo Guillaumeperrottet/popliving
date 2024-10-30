@@ -2,7 +2,7 @@ de:
   home:
     hero:
       title: "Ein inspirierender Satz oder Titel hier"
-      description: "Ein beschreibender Text hier, um mehr Informationen hinzuzufügen."
+      description: "Flexibler Aufenthalt, kurz- und langfristig"
       learn_more: "Mehr erfahren"
       image_alt: "Ein schönes Bild"
     concept:
@@ -12,11 +12,29 @@ de:
     rooms:
       title: "Unsere Zimmer"
       simple_room_title: "Einzelzimmer"
-      simple_room_description: "Beschreibung für Schritt 1."
+      simple_room_description: |
+        Eigenes WC/Dusche
+        Gemeinschaftsküche
+        TV/WLAN/Chromecast
+        Bequeme Bettwäsche
+        Concierge-Service
+        Wäscherei
       studio_title: "Unabhängiges Studio"
-      studio_description: "Beschreibung für Schritt 2."
+      studio_description: |
+        Eigenes WC/Dusche
+        Ausgestattete Küche
+        TV/WLAN/Chromecast
+        Bequeme Bettwäsche
+        Concierge-Service
+        Wäscherei
       shared_apartment_title: "Geteiltes Apartment"
-      shared_apartment_description: "Beschreibung für Schritt 3."
+      shared_apartment_description:  |
+        Geteiltes WC/Dusche
+        Ausgestattete Küche
+        TV/WLAN/Chromecast
+        Bequeme Bettwäsche
+        Concierge-Service
+        Wäscherei
       learn_more: "Mehr erfahren"
       simple_room_image_alt: "Bild des Einzelzimmers"
       studio_image_alt: "Bild des unabhängigen Studios"
@@ -55,11 +73,10 @@ de:
 
   navbar:
     home: "Startseite"
-    how_it_works: "So funktioniert es"
-    booking: "Reservierung"
+    concept: "Konzept"
     about: "Über uns"
     contact: "Kontakt"
-    book_now: "Jetzt buchen"
+    book_now: "Verfügbarkeitsanfrage"
 
   about:
     faq:
@@ -80,3 +97,17 @@ de:
         q5:
           title: "Kann ich ein Haustier mitbringen?"
           answer: "Nein, leider können wir aufgrund von Platzmangel, Allergien und Sauberkeitsgründen keine Haustiere im Gebäude akzeptieren."
+
+  footer:
+    about:
+      title: "Über uns"
+      description: "Coliving ist für diejenigen, die es genießen, mit anderen zusammenzuleben und Teil einer Gemeinschaft zu sein. Wir teilen unseren Lebensraum, um Verbindungen zu schaffen, Erfahrungen auszutauschen und als Gemeinschaft gemeinsam zu wachsen."
+    quick_links:
+      title: "Schnellzugriff"
+      home: "Startseite"
+      booking_request: "Verfügbarkeitsanfrage"
+      faq: "FAQ"
+      contact: "Kontakt"
+    contact_us:
+      title: "Kontaktieren Sie uns"
+    copyright: "&copy; 2024 Popliving. Alle Rechte vorbehalten."

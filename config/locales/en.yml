@@ -2,7 +2,7 @@ en:
   home:
     hero:
       title: "An inspiring phrase or title here"
-      description: "A descriptive text here to add more information."
+      description: "Flexible stay, short and long term"
       learn_more: "Learn more"
       image_alt: "A beautiful image"
     concept:
@@ -12,11 +12,29 @@ en:
     rooms:
       title: "Our Rooms"
       simple_room_title: "Single Room"
-      simple_room_description: "Description for step 1."
+      simple_room_description: |
+        Private WC/Shower
+        Shared Kitchen
+        TV/WIFI/Chromecast
+        Comfortable Bedding
+        Concierge Service
+        Laundry
       studio_title: "Independent Studio"
-      studio_description: "Description for step 2."
+      studio_description: |
+        Private WC/Shower
+        Equipped Kitchen
+        TV/WIFI/Chromecast
+        Comfortable Bedding
+        Concierge Service
+        Laundry
       shared_apartment_title: "Shared Apartment"
-      shared_apartment_description: "Description for step 3."
+      shared_apartment_description: |
+        Shared WC/Shower
+        Equipped Kitchen
+        TV/WIFI/Chromecast
+        Comfortable Bedding
+        Concierge Service
+        Laundry
       learn_more: "Learn more"
       simple_room_image_alt: "Image of the single room"
       studio_image_alt: "Image of the independent studio"
@@ -55,11 +73,10 @@ en:
 
   navbar:
     home: "Home"
-    how_it_works: "How It Works"
-    booking: "Booking"
+    concept: "Concept"
     about: "About"
     contact: "Contact"
-    book_now: "Book Now"
+    book_now: "Availability Request"
 
   about:
     faq:
@@ -80,3 +97,17 @@ en:
         q5:
           title: "Can I bring a pet?"
           answer: "No, unfortunately, we cannot accept pets in the building due to space constraints, allergies, and cleanliness reasons."
+
+  footer:
+    about:
+      title: "About"
+      description: "Coliving is for those who enjoy living with others and being part of a community. We share our living space to create bonds, exchange experiences, and grow together as a community."
+    quick_links:
+      title: "Quick Links"
+      home: "Home"
+      booking_request: "Availability Request"
+      faq: "FAQ"
+      contact: "Contact"
+    contact_us:
+      title: "Contact Us"
+    copyright: "&copy; 2024 Popliving. All Rights Reserved."
