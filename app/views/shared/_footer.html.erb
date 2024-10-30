@@ -32,9 +32,14 @@
       </div>
     </div>
 
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    </div>
+    <div class="language-switcher d-flex align-items-center">
+      <span class="me-2"><i class="fas fa-globe"></i></span>
+        <%= link_to "FR", url_for(locale: :fr), class: "btn btn-sm btn-language" %>
+        <%= link_to "EN", url_for(locale: :en), class: "btn btn-sm btn-language" %>
+        <%= link_to "DE", url_for(locale: :de), class: "btn btn-sm btn-language" %>
+        <%= link_to "PT", url_for(locale: :pt), class: "btn btn-sm btn-language" %>
+        <%= link_to "ES", url_for(locale: :es), class: "btn btn-sm btn-language" %>
+  </div>
 
     <!-- Copyright -->
     <div class="row mt-4">

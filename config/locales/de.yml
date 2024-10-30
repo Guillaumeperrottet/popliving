@@ -1,0 +1,82 @@
+de:
+  home:
+    hero:
+      title: "Ein inspirierender Satz oder Titel hier"
+      description: "Ein beschreibender Text hier, um mehr Informationen hinzuzufügen."
+      learn_more: "Mehr erfahren"
+      image_alt: "Ein schönes Bild"
+    concept:
+      title: "Das Konzept"
+      description: "Coliving ist für diejenigen, die es genießen, mit anderen zusammenzuleben und Teil einer Gemeinschaft zu sein. Wir teilen unseren Lebensraum, um Verbindungen zu schaffen, Erfahrungen auszutauschen und als Gemeinschaft gemeinsam zu wachsen."
+      questions: "Fragen"
+    rooms:
+      title: "Unsere Zimmer"
+      simple_room_title: "Einzelzimmer"
+      simple_room_description: "Beschreibung für Schritt 1."
+      studio_title: "Unabhängiges Studio"
+      studio_description: "Beschreibung für Schritt 2."
+      shared_apartment_title: "Geteiltes Apartment"
+      shared_apartment_description: "Beschreibung für Schritt 3."
+      learn_more: "Mehr erfahren"
+      simple_room_image_alt: "Bild des Einzelzimmers"
+      studio_image_alt: "Bild des unabhängigen Studios"
+      shared_apartment_image_alt: "Bild des geteilten Apartments"
+    services:
+      title: "Unsere Dienstleistungen"
+      storage_title: "Lagerung"
+      storage_description: "Bei Bedarf stellen wir dir Lagerraum zur Verfügung. Unsere modularen Räume passen sich an deine Bedürfnisse an, egal wie lange."
+      cleaning_title: "Reinigung"
+      cleaning_description: "Wir bieten Reinigungsdienste auf Anfrage an. Konzentriere dich auf das, was dir wichtig ist, und wir sorgen dafür, dass dein Wohnraum einladend und sauber bleibt."
+      parking_title: "Parkplatz"
+      parking_description: "Parkplätze sind in begrenzter Anzahl verfügbar, also zögere nicht, dir einen zu reservieren."
+
+  booking:
+    request_availability: "Verfügbarkeitsanfrage"
+    correct_errors: "Bitte korrigieren Sie die folgenden Fehler:"
+    choose_room: "Wählen Sie ein Zimmer"
+    room_types:
+      simple: "Einzelzimmer"
+      studio: "Unabhängiges Studio"
+      shared: "Geteiltes Apartment"
+    check_in_date: "Anreisedatum"
+    stay_duration: "Aufenthaltsdauer"
+    durations:
+      one_week: "1 Woche"
+      one_month: "1 Monat"
+      two_months_plus: "2 Monate oder mehr"
+    message: "Nachricht"
+    message_placeholder: "Hinterlassen Sie eine Nachricht..."
+    first_name: "Vorname"
+    last_name: "Nachname"
+    email: "E-Mail"
+    phone: "Telefon"
+    address: "Adresse"
+    submit: "Absenden"
+
+  navbar:
+    home: "Startseite"
+    how_it_works: "So funktioniert es"
+    booking: "Reservierung"
+    about: "Über uns"
+    contact: "Kontakt"
+    book_now: "Jetzt buchen"
+
+  about:
+    faq:
+      title: "Häufig gestellte Fragen"
+      questions:
+        q1:
+          title: "Für wen ist Coliving gedacht?"
+          answer: "Coliving ist für diejenigen, die gerne mit anderen zusammenleben und Teil einer Gemeinschaft sein möchten. Das Durchschnittsalter unserer Bewohner liegt zwischen 24 und 36 Jahren, aber der Gemeinschaftssinn und die Freude am Zusammenleben zählen mehr."
+        q2:
+          title: "Wie lange muss ich mindestens bleiben?"
+          answer: "Es gibt keine Mindestaufenthaltsdauer. Obwohl die meisten unserer Bewohner mehrere Monate bleiben, sind auch Wochen- oder Wochenendaufenthalte möglich."
+        q3:
+          title: "Gibt es Optionen für Paare?"
+          answer: "Das Leben als Paar in einem Coliving-Haus ist eine bereichernde Erfahrung. Einige unserer Zimmer sind für Doppelbelegung verfügbar."
+        q4:
+          title: "Kann ich meine Wohnadresse im Coliving registrieren?"
+          answer: "Ja, du kannst deine Wohnadresse in unserer Einrichtung registrieren und Post hier empfangen. Die Registrierung ist jedoch erst nach deinem Einzug möglich."
+        q5:
+          title: "Kann ich ein Haustier mitbringen?"
+          answer: "Nein, leider können wir aufgrund von Platzmangel, Allergien und Sauberkeitsgründen keine Haustiere im Gebäude akzeptieren."

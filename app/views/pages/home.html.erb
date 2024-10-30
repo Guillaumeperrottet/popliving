@@ -1,86 +1,85 @@
 <div class="container hero-section">
   <div class="row align-items-center">
     <div class="col-lg-6">
-      <h1 class="hero-text">Une phrase inspirante ou un titre ici</h1>
-      <p class="hero-subtext">Un texte descriptif ici pour ajouter plus d'informations.</p>
-      <%= link_to "En savoir plus", about_path, class: "btn btn-primary mt-3" %>
+      <h1 class="hero-text"><%= t('home.hero.title') %></h1>
+      <p class="hero-subtext"><%= t('home.hero.description') %></p>
+      <%= link_to t('home.hero.learn_more'), about_path, class: "btn btn-primary mt-3" %>
     </div>
     <div class="col-lg-6">
-      <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845225/manger_ensemble_xbgbvh.jpg') %>" alt="Une belle image" class="img-fluid hero-image">
+      <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845225/manger_ensemble_xbgbvh.jpg') %>" alt="<%= t('home.hero.image_alt') %>" class="img-fluid hero-image">
     </div>
   </div>
 </div>
 
 <div class="container-fluid concept-section d-flex align-items-center justify-content-center">
   <div class="text-center">
-    <h2 class="mb-4">Le Concept</h2>
+    <h2 class="mb-4"><%= t('home.concept.title') %></h2>
     <p class="concept-text mb-4">
-      Le coliving s’adresse à ceux qui apprécient vivre avec d'autres et faire partie d'une communauté.
-      Nous partageons notre espace de vie pour créer des liens, échanger des expériences et évoluer ensemble
-      en tant que communauté.
+      <%= t('home.concept.description') %>
     </p>
-    <%= link_to "Questions", about_path, class: "btn btn-primary" %>
+    <%= link_to t('home.concept.questions'), about_path, class: "btn btn-primary" %>
   </div>
 </div>
 
 <div class="container rooms-section">
-  <h2 class="text-center mb-5">Nos chambres</h2>
+  <h2 class="text-center mb-5"><%= t('home.rooms.title') %></h2>
   <div class="row text-center">
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_1_n037de.jpg') %>" alt="Step 1" class="img-fluid mb-3">
-          <h3>Chambre simple</h3>
-          <p>Description de l'étape 1.</p>
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_1_n037de.jpg') %>" alt="<%= t('home.rooms.simple_room_image_alt') %>" class="img-fluid mb-3">
+          <h3><%= t('home.rooms.simple_room_title') %></h3>
+          <p><%= t('home.rooms.simple_room_description') %></p>
         </div>
       <% end %>
     </div>
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_3_dnatwb.jpg') %>" alt="Step 2" class="img-fluid mb-3">
-          <h3>Studio indépendant</h3>
-          <p>Description de l'étape 2.</p>
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_3_dnatwb.jpg') %>" alt="<%= t('home.rooms.studio_image_alt') %>" class="img-fluid mb-3">
+          <h3><%= t('home.rooms.studio_title') %></h3>
+          <p><%= t('home.rooms.studio_description') %></p>
         </div>
       <% end %>
     </div>
     <div class="col-md-4">
       <%= link_to new_booking_path, class: "room-card-link" do %>
         <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_2_fz8c7n.jpg') %>" alt="Step 3" class="img-fluid mb-3">
-          <h3>Appartement partagé</h3>
-          <p>Description de l'étape 3.</p>
+          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845231/how_it_works_2_fz8c7n.jpg') %>" alt="<%= t('home.rooms.shared_apartment_image_alt') %>" class="img-fluid mb-3">
+          <h3><%= t('home.rooms.shared_apartment_title') %></h3>
+          <p><%= t('home.rooms.shared_apartment_description') %></p>
         </div>
       <% end %>
     </div>
   </div>
   <div class="text-center mt-5">
-    <%= link_to "En savoir plus", new_booking_path, class: "btn btn-primary" %>
+    <%= link_to t('home.rooms.learn_more'), new_booking_path, class: "btn btn-primary" %>
   </div>
 </div>
+
 <div class="container-fluid services-section d-flex align-items-center justify-content-center">
   <div class="text-center">
-    <h2 class="mb-5">Nos Services</h2>
+    <h2 class="mb-5"><%= t('home.services.title') %></h2>
     <div class="row text-center">
       <div class="col-md-4">
         <div class="service-card p-4">
           <i class="fas fa-box fa-3x mb-3"></i> <!-- Icône pour Stockage -->
-          <h4>Stockage</h4>
-          <p>Si tu as besoin, nous mettons à ta disposition un espace de stockage. Quelle que soit la durée, nos espaces modulables s'adaptent à tes besoins.</p>
+          <h4><%= t('home.services.storage_title') %></h4>
+          <p><%= t('home.services.storage_description') %></p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="service-card p-4">
           <i class="fas fa-broom fa-3x mb-3"></i> <!-- Icône pour Nettoyage -->
-          <h4>Nettoyage</h4>
-          <p>Nous proposons des services de nettoyage à la demande. Concentre-toi sur ce qui compte vraiment pour toi, et nous veillons à ce que ton lieu de vie reste accueillant et propre.</p>
+          <h4><%= t('home.services.cleaning_title') %></h4>
+          <p><%= t('home.services.cleaning_description') %></p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="service-card p-4">
           <i class="fas fa-car fa-3x mb-3"></i> <!-- Icône pour Parking -->
-          <h4>Parking</h4>
-          <p>Des places de parking sont disponibles en quantité limitée, alors ne tarde pas à réserver la tienne.</p>
+          <h4><%= t('home.services.parking_title') %></h4>
+          <p><%= t('home.services.parking_description') %></p>
         </div>
       </div>
     </div>
