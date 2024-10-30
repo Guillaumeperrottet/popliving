@@ -1,0 +1,83 @@
+es:
+
+  home:
+    hero:
+      title: "Una frase inspiradora o título aquí"
+      description: "Un texto descriptivo aquí para agregar más información."
+      learn_more: "Saber más"
+      image_alt: "Una imagen hermosa"
+    concept:
+      title: "El Concepto"
+      description: "El coliving es para quienes disfrutan vivir con otros y ser parte de una comunidad. Compartimos nuestro espacio de vida para crear vínculos, intercambiar experiencias y crecer juntos como comunidad."
+      questions: "Preguntas"
+    rooms:
+      title: "Nuestras Habitaciones"
+      simple_room_title: "Habitación Simple"
+      simple_room_description: "Descripción del paso 1."
+      studio_title: "Estudio Independiente"
+      studio_description: "Descripción del paso 2."
+      shared_apartment_title: "Apartamento Compartido"
+      shared_apartment_description: "Descripción del paso 3."
+      learn_more: "Saber más"
+      simple_room_image_alt: "Imagen de la habitación simple"
+      studio_image_alt: "Imagen del estudio independiente"
+      shared_apartment_image_alt: "Imagen del apartamento compartido"
+    services:
+      title: "Nuestros Servicios"
+      storage_title: "Almacenamiento"
+      storage_description: "Si necesitas, te proporcionamos un espacio de almacenamiento. Nuestros espacios modulares se adaptan a tus necesidades, sin importar la duración."
+      cleaning_title: "Limpieza"
+      cleaning_description: "Ofrecemos servicios de limpieza a pedido. Concéntrate en lo que realmente importa para ti, y nosotros nos aseguramos de que tu espacio se mantenga acogedor y limpio."
+      parking_title: "Estacionamiento"
+      parking_description: "Hay plazas de estacionamiento disponibles en cantidad limitada, así que no dudes en reservar la tuya."
+
+  booking:
+    request_availability: "Solicitud de disponibilidad"
+    correct_errors: "Por favor, corrija los siguientes errores:"
+    choose_room: "Elija una habitación"
+    room_types:
+      simple: "Habitación Simple"
+      studio: "Estudio Independiente"
+      shared: "Apartamento Compartido"
+    check_in_date: "Fecha de llegada"
+    stay_duration: "Duración de la estancia"
+    durations:
+      one_week: "1 semana"
+      one_month: "1 mes"
+      two_months_plus: "2 meses o más"
+    message: "Mensaje"
+    message_placeholder: "Deja un mensaje..."
+    first_name: "Nombre"
+    last_name: "Apellido"
+    email: "Correo electrónico"
+    phone: "Teléfono"
+    address: "Dirección"
+    submit: "Enviar"
+
+  navbar:
+    home: "Inicio"
+    how_it_works: "Cómo Funciona"
+    booking: "Reserva"
+    about: "Acerca de"
+    contact: "Contacto"
+    book_now: "Reservar Ahora"
+
+  about:
+    faq:
+      title: "Preguntas Frecuentes"
+      questions:
+        q1:
+          title: "¿Para quién es el coliving?"
+          answer: "El coliving es para quienes disfrutan vivir con otros y ser parte de una comunidad. La edad promedio de nuestros residentes está entre 24 y 36 años, pero la mentalidad y el gusto por la vida en comunidad son lo más importante."
+        q2:
+          title: "¿Cuál es la duración mínima de la estancia?"
+          answer: "No hay una duración mínima de estancia. Aunque la mayoría de nuestros residentes se quedan varios meses, también están disponibles estancias semanales o de fin de semana."
+        q3:
+          title: "¿Hay opciones para parejas?"
+          answer: "Vivir como pareja en una casa de coliving es una experiencia enriquecedora. Algunas de nuestras habitaciones están disponibles para ocupación doble."
+        q4:
+          title: "¿Puedo registrar mi dirección residencial en el coliving?"
+          answer: "Sí, puedes registrar tu dirección residencial en nuestra instalación y recibir correo aquí. Sin embargo, el registro solo puede hacerse después de tu fecha de mudanza."
+        q5:
+          title: "¿Puedo traer una mascota?"
+          answer: "No, lamentablemente no podemos aceptar mascotas en el edificio debido a la falta de espacio, alergias y razones de limpieza."

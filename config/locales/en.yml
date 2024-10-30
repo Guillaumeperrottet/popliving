@@ -1,31 +1,82 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  home:
+    hero:
+      title: "An inspiring phrase or title here"
+      description: "A descriptive text here to add more information."
+      learn_more: "Learn more"
+      image_alt: "A beautiful image"
+    concept:
+      title: "The Concept"
+      description: "Coliving is for those who enjoy living with others and being part of a community. We share our living space to create bonds, exchange experiences, and grow together as a community."
+      questions: "Questions"
+    rooms:
+      title: "Our Rooms"
+      simple_room_title: "Single Room"
+      simple_room_description: "Description for step 1."
+      studio_title: "Independent Studio"
+      studio_description: "Description for step 2."
+      shared_apartment_title: "Shared Apartment"
+      shared_apartment_description: "Description for step 3."
+      learn_more: "Learn more"
+      simple_room_image_alt: "Image of the single room"
+      studio_image_alt: "Image of the independent studio"
+      shared_apartment_image_alt: "Image of the shared apartment"
+    services:
+      title: "Our Services"
+      storage_title: "Storage"
+      storage_description: "If needed, we provide storage space for you. No matter the duration, our modular spaces adapt to your needs."
+      cleaning_title: "Cleaning"
+      cleaning_description: "We offer on-demand cleaning services. Focus on what really matters to you, and we make sure your living space remains welcoming and clean."
+      parking_title: "Parking"
+      parking_description: "Parking spaces are available in limited quantity, so don’t hesitate to reserve yours."
+
+  booking:
+    request_availability: "Availability Request"
+    correct_errors: "Please correct the following errors:"
+    choose_room: "Choose a Room"
+    room_types:
+      simple: "Single Room"
+      studio: "Independent Studio"
+      shared: "Shared Apartment"
+    check_in_date: "Check-in Date"
+    stay_duration: "Duration of Stay"
+    durations:
+      one_week: "1 week"
+      one_month: "1 month"
+      two_months_plus: "2 months or more"
+    message: "Message"
+    message_placeholder: "Leave a message..."
+    first_name: "First Name"
+    last_name: "Last Name"
+    email: "Email"
+    phone: "Phone"
+    address: "Address"
+    submit: "Submit"
+
+  navbar:
+    home: "Home"
+    how_it_works: "How It Works"
+    booking: "Booking"
+    about: "About"
+    contact: "Contact"
+    book_now: "Book Now"
+
+  about:
+    faq:
+      title: "Frequently Asked Questions"
+      questions:
+        q1:
+          title: "Who is coliving for?"
+          answer: "Coliving is for those who enjoy living with others and being part of a community. The average age of our residents is between 24 and 36 years, but the mindset and love for communal living are what really matter."
+        q2:
+          title: "What is the minimum stay duration?"
+          answer: "There is no minimum stay duration. Although most of our residents stay for several months, weekly or weekend stays are also available."
+        q3:
+          title: "Are there options for couples?"
+          answer: "Living as a couple in a coliving house is an enriching experience. Some of our rooms are available for double occupancy."
+        q4:
+          title: "Can I register my residential address at your coliving?"
+          answer: "Yes, you can register your residential address at our facility and receive mail here. However, registration can only be done after your move-in date."
+        q5:
+          title: "Can I bring a pet?"
+          answer: "No, unfortunately, we cannot accept pets in the building due to space constraints, allergies, and cleanliness reasons."

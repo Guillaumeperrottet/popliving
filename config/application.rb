@@ -29,6 +29,10 @@ module Popliving
     config.autoload_lib(ignore: %w(assets tasks))
 
     # Configuration for the application, engines, and railties goes here.
+
+    # Configuration pour les langues disponibles et la langue par défaut
+    config.i18n.available_locales = [:fr, :en, :es, :pt, :de]  # français, anglais, espagnol, portugais, allemand
+    config.i18n.default_locale = :fr  # Définit le français comme langue par défaut
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.

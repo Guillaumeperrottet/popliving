@@ -7,22 +7,40 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <%= link_to "Home", root_path, class: "nav-link" %>
+          <%= link_to t('navbar.home'), root_path, class: "nav-link" %>
         </li>
         <!--<li class="nav-item">
-          <%= link_to "How It Works", how_it_works_path, class: "nav-link" %>
+          <%= link_to t('navbar.how_it_works'), how_it_works_path, class: "nav-link" %>
         </li>-->
         <li class="nav-item">
-          <%= link_to "Booking", new_booking_path, class: "nav-link" %>
+          <%= link_to t('navbar.booking'), new_booking_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "About", about_path, class: "nav-link" %>
+          <%= link_to t('navbar.about'), about_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact", contact_path, class: "nav-link" %>
+          <%= link_to t('navbar.contact'), contact_path, class: "nav-link" %>
         </li>
       </ul>
-      <%= link_to "Book Now", new_booking_path, class: "btn btn-primary ms-lg-3" %>
+      <%= link_to t('navbar.book_now'), new_booking_path, class: "btn btn-primary ms-lg-3" %>
     </div>
   </div>
+  <div class="language-switcher">
+    <select id="language-select" class="form-select form-select-sm" onchange="changeLanguage(this)">
+      <option value="fr" <%= 'selected' if I18n.locale == :fr %>>FR</option>
+      <option value="en" <%= 'selected' if I18n.locale == :en %>>EN</option>
+      <option value="de" <%= 'selected' if I18n.locale == :de %>>DE</option>
+      <option value="pt" <%= 'selected' if I18n.locale == :pt %>>PT</option>
+      <option value="es" <%= 'selected' if I18n.locale == :es %>>ES</option>
+    </select>
+  </div>
 </nav>
+
+<script>
+  function changeLanguage(select) {
+    const locale = select.value;
+    const url = new URL(window.location.href);
+    url.searchParams.set('locale', locale);
+    window.location.href = url.toString();
+  }
+</script>
