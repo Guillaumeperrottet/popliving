@@ -1,12 +1,6 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <!-- Section about - Hidden on mobile -->
-      <div class="col-md-4 d-none d-md-block">
-        <h5><%= t('footer.about.title') %></h5>
-        <p><%= t('footer.about.description') %></p>
-      </div>
-
       <!-- Section links - Hidden on mobile -->
       <div class="col-md-4 d-none d-md-block">
         <h5><%= t('footer.quick_links.title') %></h5>
@@ -18,18 +12,19 @@
         </ul>
       </div>
 
-      <!-- Section contact - Visible on all screen sizes -->
+      <!-- Section contact -->
       <div class="col-md-4">
         <h5><%= t('footer.contact_us.title') %></h5>
         <ul class="list-unstyled">
           <li><a href="mailto:info@tomodomo.ch">info@campus-gerance.ch</a></li>
-          <li><a href="tel:+41234567890">+41 26 913 89 20</a></li>
+          <li><a href="tel:+41269138920">+41 26 913 89 20</a></li>
+          <li><a href="tel:+41772691553">+41 77 269 15 53</a></li>
           <li><a href="#">Rue de Battentin 1, 1630 Bulle</a></li>
         </ul>
       </div>
     </div>
 
-    <!-- Language switcher - Hidden on mobile if needed -->
+    <!-- Language switcher - cacher sur tél -->
     <div class="language-switcher d-flex align-items-center justify-content-center d-none d-md-flex">
       <span class="me-2"><i class="fas fa-globe"></i></span>
       <%= link_to "FR", url_for(locale: :fr), class: "btn btn-sm btn-language" %>
