@@ -1,0 +1,17 @@
+<p><%= I18n.t('reservation.confirmation_message') %></p>
+
+<h3><%= I18n.t('booking.request_summary') %></h3>
+
+<p><strong><%= I18n.t('booking.choose_room') %>:</strong> <%= I18n.t("booking.room_types.#{@booking.room_type}") %></p>
+
+<p><strong><%= I18n.t('booking.check_in_date') %>:</strong> <%= @booking.check_in.strftime("%d/%m/%Y") %></p>
+<p><strong><%= I18n.t('booking.stay_duration') %>:</strong> <%= I18n.t("booking.durations.#{@booking.duration}") %></p>
+
+<p><strong><%= I18n.t('booking.message') %>:</strong> <%= @booking.message %></p>
+
+<h4><%= I18n.t('booking.personal_information') %></h4>
+<p><strong><%= I18n.t('booking.first_name') %>:</strong> <%= @booking.first_name %></p>
+<p><strong><%= I18n.t('booking.last_name') %>:</strong> <%= @booking.last_name %></p>
+<p><strong><%= I18n.t('booking.email') %>:</strong> <%= @booking.email %></p>
+<p><strong><%= I18n.t('booking.phone') %>:</strong> <%= @booking.phone %></p>
+<p><strong><%= I18n.t('booking.address') %>:</strong> <%= @booking.address %></p>

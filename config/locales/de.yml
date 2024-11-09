@@ -111,3 +111,12 @@ de:
     contact_us:
       title: "Kontaktieren Sie uns"
     copyright: "&copy; 2024 Popliving. Alle Rechte vorbehalten."
+
+  reservation:
+    success: "Ihre Anfrage wurde erfolgreich gesendet!"
+    failure: "Die Reservierung konnte nicht gespeichert werden. Bitte korrigieren Sie die untenstehenden Fehler."
+    confirmation_subject: "Buchungsbestätigung"
+    confirmation_message: "Ihre Anfrage ist bei uns eingegangen. Hier ist die Zusammenfassung unten. Wir werden Ihre Anfrage innerhalb von 2 Werktagen beantworten."
+    summary:
+      message: "Nachricht"
+      dates: "Angefragte Termine"

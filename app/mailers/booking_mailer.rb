@@ -7,4 +7,13 @@ class BookingMailer < ApplicationMailer
       subject: 'PopLiving Riaz - Demande de Réservation'
     )
   end
+
+  def confirmation_email(booking)
+    @booking = booking
+
+    # Définir la langue en fonction de celle de l'utilisateur
+    I18n.with_locale(@booking.locale || I18n.default_locale) do
+      mail(to: @booking.email, subject: I18n.t('reservation.confirmation_subject'))
+    end
+  end
 end
