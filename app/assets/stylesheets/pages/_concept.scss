@@ -1,0 +1,77 @@
+.concept-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.concept-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #222;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+
+.concept-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 80s linear infinite;
+}
+
+.concept-card {
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px; // Augmentez cette valeur pour rendre les cartes plus hautes
+  padding: 2rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem; // Ajoute un espace en bas des cartes
+
+  i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #6a5acd;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+}
+
+.concept-carousel {
+  padding-bottom: 12rem; // Ajoute de l'espace sous le carrousel pour éloigner le footer
+  padding-top: 10rem;
+}
+
+// Animation pour un défilement infini
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
