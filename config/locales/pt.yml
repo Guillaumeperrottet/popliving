@@ -112,3 +112,12 @@ pt:
     contact_us:
       title: "Contate-nos"
     copyright: "&copy; 2024 Popliving. Todos os direitos reservados."
+
+  reservation:
+    success: "Sua solicitação foi enviada com sucesso!"
+    failure: "A reserva não pôde ser salva. Por favor, corrija os erros abaixo."
+    confirmation_subject: "Confirmação de reserva"
+    confirmation_message: "Sua solicitação foi recebida. Aqui está o resumo abaixo. Responderemos à sua solicitação dentro de 2 dias úteis."
+    summary:
+      message: "Mensagem"
+      dates: "Datas solicitadas"

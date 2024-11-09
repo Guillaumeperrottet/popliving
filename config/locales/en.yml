@@ -111,3 +111,12 @@ en:
     contact_us:
       title: "Contact Us"
     copyright: "&copy; 2024 Popliving. All Rights Reserved."
+
+  reservation:
+    success: "Your request has been successfully sent!"
+    failure: "The reservation could not be saved. Please correct the errors below."
+    confirmation_subject: "Booking Confirmation"
+    confirmation_message: "Your request has been received. Here is the summary below. We will respond to your request within 2 business days."
+    summary:
+      message: "Message"
+      dates: "Requested dates"
