@@ -39,6 +39,16 @@
   border-color: #e64a19;
 }
 
+.logo-text {
+  font-family: "Your Desired Font", sans-serif; /* Remplace par le nom de la police si spécifique */
+  font-size: 1.2rem; /* Taille du texte */
+  font-weight: bold; /* Ou remplace par 'normal' si moins épais */
+  color: #333; /* Couleur */
+  text-transform: uppercase; /* Pour un effet majuscule */
+  letter-spacing: 1px; /* Ajuste l'espacement si souhaité */
+}
+
+
 /* Responsive styling */
 @media (max-width: 768px) {
   .navbar {
