@@ -48,6 +48,8 @@ pt:
       cleaning_description: "Oferecemos serviços de limpeza sob demanda. Foque no que realmente importa para você, e nós cuidamos para que seu espaço de vida permaneça acolhedor e limpo."
       parking_title: "Estacionamento"
       parking_description: "Vagas de estacionamento estão disponíveis em quantidade limitada, então não hesite em reservar a sua."
+      fitness_title: "Centro de Fitness"
+      fitness_description: "Mantenha-se em forma com o nosso moderno centro de fitness, equipado para atender a todas as suas necessidades de treino."
 
   booking:
     request_availability: "Pedido de disponibilidade"
@@ -121,3 +123,23 @@ pt:
     summary:
       message: "Mensagem"
       dates: "Datas solicitadas"
+
+  concept:
+    services:
+      title: "Descubra Nosso Conceito"
+    cards:
+      flexible:
+        title: "Aluguel Flexível"
+        description: "Escolha alugar seu estúdio por uma semana, um mês ou vários meses, dependendo das suas necessidades e estilo de vida."
+      cohabitation:
+        title: "Coabitação"
+        description: "Crie conexões com outros residentes em um ambiente amigável que incentiva o intercâmbio e a troca de experiências."
+      services:
+        title: "Serviços Incluídos"
+        description: "Desfrute de um ambiente de vida sem preocupações com serviços como Wi-Fi, limpeza, armazenamento e muito mais."
+      common_areas:
+        title: "Áreas Comuns"
+        description: "Acesse espaços compartilhados bem projetados para relaxar, trabalhar ou socializar, oferecendo um equilíbrio entre privacidade e vida comunitária."
+      peaceful:
+        title: "Ambiente Tranquilo"
+        description: "Viva em um ambiente calmo e inspirador, perfeito para recarregar as energias e se concentrar no que realmente importa, entre a cidade e as montanhas."
