@@ -4,20 +4,19 @@
   display: flex;
   align-items: center; /* Aligne le contenu verticalement au centre */
   justify-content: space-between; /* Aligne le contenu horizontalement */
-  padding-top: 5rem; /*
-   Espace pour la navbar */
+  padding-top: 5rem; /*Espace pour la navbar */
 }
 
 .hero-text {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   color: #333;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', serif;
 }
 
 .hero-subtext {
   font-size: 1.25rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Dancing Script', sans-serif;
   color: #666;
 }
 
@@ -44,7 +43,6 @@
     line-height: 1.6;
   }
 }
-
 
 .rooms-section {
   padding: 100px 0;
@@ -151,20 +149,18 @@
 }
 
 @media (max-width: 768px) {
-  /* Navbar */
   .navbar {
     padding: 0.5rem 1rem; /* Réduit l'espacement */
   }
 
-  /* Hero Section */
   .hero-section {
     flex-direction: column; /* Passe le contenu en colonne */
-    padding-top: 7rem; /* Ajoute de l'espace sous la navbar */
+    padding-top: 9rem; /* Ajoute de l'espace sous la navbar */
     text-align: center;
   }
 
   .hero-text {
-    font-size: 2rem; /* Réduit la taille du texte */
+    font-size: 1.5rem; /* Réduit la taille du texte */
     margin-bottom: 1rem; /* Ajoute un espace sous le titre */
   }
 
@@ -178,10 +174,9 @@
     margin-top: 1.5rem; /* Ajoute un espacement entre le texte et l'image */
   }
 
-  /* Concept Section */
   .concept-section {
     height: auto; /* Ajuste automatiquement la hauteur */
-    padding: 2rem 1rem; /* Réduit les marges pour mobile */
+    padding: 8rem 1rem; /* Réduit les marges pour mobile */
   }
 
   .concept-text {
@@ -209,18 +204,15 @@
     font-size: 0.9rem; /* Réduit la taille du texte descriptif */
   }
 
-  /* Services Section */
   .services-section {
     height: auto; /* Ajuste automatiquement la hauteur */
     padding: 2rem 1rem; /* Réduit les marges pour mobile */
     flex-direction: column; /* Passe tout en colonne */
   }
 
-
   .services-section .btn {
     margin-top: 1rem; /* Ajoute un espace au-dessus du bouton */
   }
-
 
   .service-card {
     margin-bottom: 2rem; /* Ajoute de l'espace entre les cartes */

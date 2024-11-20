@@ -114,7 +114,7 @@ fr:
       contact: "Contact"
     contact_us:
       title: "Contactez-nous"
-    copyright: "&copy; 2024 Popliving. Tous droits réservés."
+    copyright: "Popliving. Tous droits réservés."
 
   reservation:
     success: "Votre demande a bien été envoyée."

@@ -115,7 +115,7 @@ es:
       contact: "Contacto"
     contact_us:
       title: "Contáctanos"
-    copyright: "&copy; 2024 Popliving. Todos los derechos reservados."
+    copyright: "Popliving. Todos los derechos reservados."
 
   reservation:
     success: "¡Su solicitud ha sido enviada con éxito!"
