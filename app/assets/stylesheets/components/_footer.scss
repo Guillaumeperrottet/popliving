@@ -16,7 +16,7 @@
 
     &:hover {
       color: #007bff;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 
@@ -56,6 +56,32 @@
   font-size: 0.9rem; /* Réduit légèrement la taille */
   color: #666; /* Couleur douce */
   margin: 0; /* Supprime l'espace par défaut */
+}
+
+.coding-text {
+  font-size: 1rem; /* Taille du texte */
+  color: #808080; /* Gris similaire */
+  font-family: 'Roboto', sans-serif; /* Choisis une police appropriée */
+  margin: 0; /* Pas d'espace supplémentaire */
+  padding-bottom: 10px;
+}
+
+.coding-text .heart {
+  color: #ff0000; /* Rouge vif pour le cœur */
+  font-size: 0.7rem; /* Taille légèrement plus grande pour le cœur */
+  vertical-align: middle; /* Aligne le cœur avec le texte */
+}
+
+.coding-text a {
+  color: #808080; /* Même couleur que le texte */
+  text-decoration: none; /* Supprime le soulignement */
+  font-weight: bold; /* Met en gras le nom */
+}
+
+.coding-text a:hover {
+  color: #000000; /* Change de couleur au survol */
+  text-decoration: none !important; /* Ajoute un soulignement au survol */
+  cursor: url('https://res.cloudinary.com/dafkgjhwt/raw/upload/v1732119723/cursor_jwzsws.cur'), auto; /* Remplace par l'URL d'une image */
 }
 
 @media (max-width: 576px) {

@@ -8,7 +8,7 @@ fr:
     concept:
       title: "Le Concept"
       description: "Le coliving s’adresse à ceux qui apprécient vivre avec d'autres et faire partie d'une communauté. Nous partageons notre espace de vie pour créer des liens, échanger des expériences et évoluer ensemble en tant que communauté."
-      questions: "Questions"
+      detail: "Détails"
     rooms:
       title: "Nos chambres"
       simple_room_title: "Chambre simple"

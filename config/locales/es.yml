@@ -9,7 +9,7 @@ es:
     concept:
       title: "El Concepto"
       description: "El coliving es para quienes disfrutan vivir con otros y ser parte de una comunidad. Compartimos nuestro espacio de vida para crear vínculos, intercambiar experiencias y crecer juntos como comunidad."
-      questions: "Preguntas"
+      detail: "Detalles"
     rooms:
       title: "Nuestras Habitaciones"
       simple_room_title: "Habitación Simple"

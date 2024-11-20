@@ -9,7 +9,7 @@ pt:
     concept:
       title: "O Conceito"
       description: "Coliving é para aqueles que gostam de viver com outros e fazer parte de uma comunidade. Compartilhamos nosso espaço de vida para criar laços, trocar experiências e crescer juntos como uma comunidade."
-      questions: "Perguntas"
+      detail: "Detalhes"
     rooms:
       title: "Nossos Quartos"
       simple_room_title: "Quarto Simples"
