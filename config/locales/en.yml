@@ -47,6 +47,8 @@ en:
       cleaning_description: "We offer on-demand cleaning services. Focus on what really matters to you, and we make sure your living space remains welcoming and clean."
       parking_title: "Parking"
       parking_description: "Parking spaces are available in limited quantity, so don’t hesitate to reserve yours."
+      fitness_title: "Fitness Center"
+      fitness_description: "Stay in shape with our modern fitness center, equipped to meet all your workout needs."
 
   booking:
     request_availability: "Availability Request"
@@ -120,3 +122,23 @@ en:
     summary:
       message: "Message"
       dates: "Requested dates"
+
+  concept:
+    services:
+      title: "Discover Our Concept"
+    cards:
+      flexible:
+        title: "Flexible Rental"
+        description: "Choose to rent your studio for a week, a month, or several months, depending on your needs and lifestyle."
+      cohabitation:
+        title: "Cohabitation"
+        description: "Build connections with other residents in a friendly environment that encourages exchange and sharing experiences."
+      services:
+        title: "All-Inclusive Services"
+        description: "Enjoy a worry-free living environment with services like WiFi, cleaning, storage, and more."
+      common_areas:
+        title: "Common Areas"
+        description: "Access well-designed shared spaces to relax, work, or socialize, offering a balance between privacy and community living."
+      peaceful:
+        title: "Peaceful Ambiance"
+        description: "Live in a calm and inspiring environment, perfect for recharging and focusing on what truly matters, between city and mountains."

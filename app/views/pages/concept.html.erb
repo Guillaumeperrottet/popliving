@@ -1,87 +1,15 @@
-<div class="concept-page">
-  <h1 class="concept-title">Notre Concept</h1>
-
-  <div class="concept-carousel">
-    <div class="carousel-track">
-      <!-- Original Set of Cards -->
-      <div class="concept-card">
-        <i class="icon-flexible"></i>
-        <h2>Location Flexible</h2>
-        <p>Choisissez de louer votre studio pour une semaine, un mois ou plusieurs mois, selon vos besoins et votre style de vie.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-cohabitation"></i>
-        <h2>Cohabitation</h2>
-        <p>Créez des liens avec d'autres résidents dans un environnement convivial, favorisant l'échange et le partage d'expériences.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-services"></i>
-        <h2>Tous Services Inclus</h2>
-        <p>Profitez d'un cadre de vie sans souci avec des services tels que le WiFi, le nettoyage, le stockage et bien plus encore.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-common-areas"></i>
-        <h2>Espaces Communs</h2>
-        <p>Accédez à des zones communes bien conçues pour se détendre, travailler ou socialiser, offrant un équilibre entre vie privée et vie communautaire.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-peaceful"></i>
-        <h2>Ambiance Paisible</h2>
-        <p>Vivez dans un environnement calme et inspirant, idéal pour se ressourcer et se concentrer sur ce qui compte vraiment entre ville et montagne.</p>
-      </div>
-
-      <!-- Duplicate Set of Cards for Infinite Loop -->
-      <div class="concept-card">
-        <i class="icon-flexible"></i>
-        <h2>Location Flexible</h2>
-        <p>Choisissez de louer votre studio pour une semaine, un mois ou plusieurs mois, selon vos besoins et votre style de vie.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-cohabitation"></i>
-        <h2>Cohabitation</h2>
-        <p>Créez des liens avec d'autres résidents dans un environnement convivial, favorisant l'échange et le partage d'expériences.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-services"></i>
-        <h2>Tous Services Inclus</h2>
-        <p>Profitez d'un cadre de vie sans souci avec des services tels que le WiFi, le nettoyage, le stockage et bien plus encore.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-common-areas"></i>
-        <h2>Espaces Communs</h2>
-        <p>Accédez à des zones communes bien conçues pour se détendre, travailler ou socialiser, offrant un équilibre entre vie privée et vie communautaire.</p>
-      </div>
-
-      <div class="concept-card">
-        <i class="icon-peaceful"></i>
-        <h2>Ambiance Paisible</h2>
-        <p>Vivez dans un environnement calme et inspirant, idéal pour se ressourcer et se concentrer sur ce qui compte vraiment entre ville et montagne.</p>
-      </div>
+<div class="container-fluid services-section d-flex align-items-center justify-content-center">
+  <div class="text-center">
+    <h2 class="mb-5"><%= t('concept.services.title') %></h2>
+    <div class="row text-center">
+      <% ["flexible", "cohabitation", "services", "common_areas", "peaceful"].each do |card| %>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4><%= t("concept.cards.#{card}.title") %></h4>
+            <p><%= t("concept.cards.#{card}.description") %></p>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
-
-
-<script>
-let currentIndex = 0;
-const track = document.querySelector('.carousel-track');
-const cards = Array.from(document.querySelectorAll('.concept-card'));
-const cardWidth = cards[0].offsetWidth + 20; // Ajustez pour inclure la marge/gap entre les cartes
-const totalCards = cards.length;
-
-function moveCarousel() {
-  currentIndex = (currentIndex + 1) % totalCards;
-  const offset = -currentIndex * cardWidth;
-  track.style.transform = `translateX(${offset}px)`;
-}
-
-// Défilement automatique toutes les 3 secondes
-setInterval(moveCarousel, 3000);
-</script>
