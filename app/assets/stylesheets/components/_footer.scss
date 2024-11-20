@@ -52,6 +52,12 @@
   }
 }
 
+.copyright-section p {
+  font-size: 0.9rem; /* Réduit légèrement la taille */
+  color: #666; /* Couleur douce */
+  margin: 0; /* Supprime l'espace par défaut */
+}
+
 @media (max-width: 576px) {
   .footer {
     padding-top: 10px;

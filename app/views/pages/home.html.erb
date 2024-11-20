@@ -1,3 +1,4 @@
+<!--hero section-->
 <div class="container hero-section">
   <div class="row align-items-center">
     <div class="col-lg-6">
@@ -11,6 +12,7 @@
   </div>
 </div>
 
+<!--concept section-->
 <div class="container-fluid concept-section d-flex align-items-center justify-content-center">
   <div class="text-center">
     <h2 class="mb-4"><%= t('home.concept.title') %></h2>
@@ -21,6 +23,7 @@
   </div>
 </div>
 
+<!--concept section-->
 <div class="container rooms-section">
   <h2 class="text-center mb-5"><%= t('home.rooms.title') %></h2>
   <div class="row text-center">
@@ -59,7 +62,7 @@
 
 <div class="container-fluid services-section d-flex align-items-center justify-content-center">
   <div class="text-center">
-    <h2 class="mb-5"><%= t('home.services.title') %></h2>
+    <h2 class="section-title"><%= t('home.services.title') %></h2>
     <div class="row text-center">
       <div class="col-md-4">
         <div class="service-card p-4">
@@ -83,6 +86,13 @@
         </div>
       </div>
       <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <i class="fas fa-shopping-basket fa-3x mb-3"></i> <!-- Icône pour epicerie -->
+            <h4><%= t('home.services.epicerie_title') %></h4>
+            <p><%= t('home.services.epicerie_description') %></p>
+          </div>
+        </div>
         <div class="col-md-4">
           <div class="service-card p-4">
             <i class="fas fa-dumbbell fa-3x mb-3"></i> <!-- Icône pour fitness -->

@@ -49,7 +49,9 @@ es:
       parking_title: "Estacionamiento"
       parking_description: "Hay plazas de estacionamiento disponibles en cantidad limitada, así que no dudes en reservar la tuya."
       fitness_title: "Centro de Fitness"
-      fitness_description: "Mantente en forma con nuestro moderno centro de fitness, equipado para satisfacer todas tus necesidades de entrenamiento."
+      fitness_description: "Situada a 150m, de pago"
+      epicerie_title: "Tienda de comestibles"
+      epicerie_description: "Situada a 150m"
 
   booking:
     request_availability: "Solicitud de disponibilidad"
@@ -113,7 +115,7 @@ es:
       contact: "Contacto"
     contact_us:
       title: "Contáctanos"
-    copyright: "&copy; 2024 Popliving. Todos los derechos reservados."
+    copyright: "Popliving. Todos los derechos reservados."
 
   reservation:
     success: "¡Su solicitud ha sido enviada con éxito!"
