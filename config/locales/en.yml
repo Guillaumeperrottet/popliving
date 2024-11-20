@@ -48,7 +48,9 @@ en:
       parking_title: "Parking"
       parking_description: "Parking spaces are available in limited quantity, so don’t hesitate to reserve yours."
       fitness_title: "Fitness Center"
-      fitness_description: "Stay in shape with our modern fitness center, equipped to meet all your workout needs."
+      fitness_description: "Located 150m away, paid"
+      epicerie_title: "Grocery"
+      epicerie_description: "Located 150m away"
 
   booking:
     request_availability: "Availability Request"
