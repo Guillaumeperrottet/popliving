@@ -31,14 +31,16 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "gmail.com",
-    user_name: ENV['SMTP_USERNAME'],
-    password: ENV['SMTP_PASSWORD'],
-    authentication: "plain",
-    enable_starttls_auto: true
+    address: "mail01.swisscenter.com",
+    port: 465, # Utilise SSL
+    domain: "popliving.ch",
+    user_name: "reservation@popliving.ch",
+    password: ENV['SMTP_PASSWORD'], # Défini dans les variables d'environnement pour la sécurité
+    authentication: :login,
+    ssl: true, # Active SSL pour le port 465
+    enable_starttls_auto: true # Active STARTTLS si tu utilises le port 587
   }
+  config.action_mailer.default_options = { from: 'reservation@popliving.ch' }
 
   config.active_storage.service = :cloudinary
 
