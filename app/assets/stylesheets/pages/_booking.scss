@@ -2,6 +2,7 @@
   padding: 50px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Ajoute un fond blanc pour plus de lisibilité */
 
   .form-group {
     margin-bottom: 1.5rem;
@@ -10,6 +11,7 @@
   label {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    display: block; /* Assure un alignement propre */
   }
 
   .form-control {
@@ -19,22 +21,73 @@
   }
 
   .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #ff5722;
+    border-color: #ff5722;
     font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 5px;
 
     &:hover {
-      background-color: #0056b3;
-      border-color: #0056b3;
+      background-color: #e64a19;
+      border-color: #ff5722;
     }
   }
-
 }
 
 .booking-flex-grow {
   flex-grow: 1 !important;
   padding-top: 100px;
   padding-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .booking-form-section {
+    padding: 30px; /* Réduit les marges pour les petits écrans */
+    box-shadow: none; /* Supprime l'ombre pour un design plus simple */
+    border-radius: 0; /* Supprime les coins arrondis pour s'adapter au mobile */
+  }
+
+  .form-group {
+    margin-bottom: 1rem; /* Réduit l'espacement entre les champs */
+  }
+
+  label {
+    font-size: 1rem; /* Réduit la taille du texte des labels */
+  }
+
+  .form-control {
+    font-size: 0.9rem; /* Réduit la taille des champs */
+    padding: 8px; /* Réduit l'espacement interne */
+  }
+
+  .btn-primary {
+    font-size: 1rem; /* Réduit la taille du bouton */
+    padding: 8px 15px; /* Réduit l'espacement interne du bouton */
+  }
+}
+
+@media (max-width: 576px) {
+  .booking-form-section {
+    padding: 20px; /* Réduit davantage les marges pour les très petits écrans */
+  }
+
+  .form-control {
+    font-size: 0.85rem; /* Réduit encore la taille des champs */
+    padding: 7px; /* Réduit l'espacement interne */
+  }
+
+  label {
+    font-size: 0.9rem; /* Réduit la taille des labels */
+  }
+
+  .btn-primary {
+    font-size: 0.9rem; /* Réduit la taille du texte du bouton */
+    padding: 8px 12px; /* Réduit l'espacement interne */
+  }
+
+  .booking-flex-grow {
+    padding-top: 50px; /* Réduit l'espacement en haut */
+    padding-bottom: 20px; /* Réduit l'espacement en bas */
+  }
 }

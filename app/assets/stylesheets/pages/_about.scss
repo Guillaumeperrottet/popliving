@@ -2,7 +2,8 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-top: -100px; // Ajuste cette valeur pour positionner le titre
+  margin-top: -100px; /* Ajuste cette valeur pour positionner le titre */
+  text-align: center;
 }
 
 .faq-section {
@@ -35,5 +36,55 @@
   .text-center {
     text-align: center !important;
     margin-bottom: 60px;
+  }
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2rem; /* Réduit la taille du titre */
+    margin-top: -50px; /* Ajuste le positionnement pour mobile */
+  }
+
+  .faq-section {
+    padding: 30px 15px; /* Réduit les marges et les espacements */
+  }
+
+  .accordion-button {
+    font-size: 1rem; /* Réduit la taille des boutons */
+    padding: 10px; /* Réduit l'espacement dans les boutons */
+  }
+
+  .accordion-body {
+    font-size: 0.9rem; /* Réduit la taille du texte des réponses */
+  }
+
+  .text-center {
+    margin-bottom: 40px; /* Réduit l'espacement en bas pour mobile */
+  }
+}
+
+/* Styles pour les très petits écrans (comme les téléphones anciens) */
+@media (max-width: 576px) {
+  .faq-title {
+    font-size: 1.8rem; /* Réduit encore la taille du titre */
+    margin-top: -30px; /* Ajuste encore le positionnement */
+  }
+
+  .faq-section {
+    padding: 20px 10px; /* Réduit encore les marges */
+  }
+
+  .accordion-button {
+    font-size: 0.9rem; /* Réduit encore la taille des boutons */
+    padding: 8px; /* Réduit l'espacement interne */
+  }
+
+  .accordion-body {
+    font-size: 0.85rem; /* Texte légèrement plus petit */
+  }
+
+  .text-center {
+    margin-bottom: 30px; /* Moins d'espacement sur les très petits écrans */
   }
 }
