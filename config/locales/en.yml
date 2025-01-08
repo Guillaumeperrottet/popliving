@@ -50,7 +50,7 @@ en:
       fitness_title: "Fitness Center"
       fitness_description: "Located 150m away, paid"
       epicerie_title: "Grocery"
-      epicerie_description: "Located 150m away"
+      epicerie_description: "Located 500m away"
 
   booking:
     request_availability: "Availability Request"

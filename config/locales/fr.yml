@@ -50,7 +50,7 @@ fr:
       fitness_title: "Salle de Fitness"
       fitness_description: "Située à 150m, payante"
       epicerie_title: "Epicerie"
-      epicerie_description: "Située à 150m"
+      epicerie_description: "Située à 500m"
 
   booking:
       request_availability: "Demande de disponibilité"

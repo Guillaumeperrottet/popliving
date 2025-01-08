@@ -50,7 +50,7 @@ de:
       fitness_title: "Fitnessstudio"
       fitness_description: "Befindet sich 150m entfernt, kostenpflichtig"
       epicerie_title: "Lebensmittelgeschäft"
-      epicerie_description: "Befindet sich 150m entfernt"
+      epicerie_description: "Befindet sich 500m entfernt"
 
   booking:
     request_availability: "Verfügbarkeitsanfrage"

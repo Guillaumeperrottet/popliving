@@ -51,7 +51,7 @@ es:
       fitness_title: "Centro de Fitness"
       fitness_description: "Situada a 150m, de pago"
       epicerie_title: "Tienda de comestibles"
-      epicerie_description: "Situada a 150m"
+      epicerie_description: "Situada a 500m"
 
   booking:
     request_availability: "Solicitud de disponibilidad"
