@@ -49,7 +49,7 @@ pt:
       parking_title: "Estacionamento"
       parking_description: "Vagas de estacionamento estão disponíveis em quantidade limitada, então não hesite em reservar a sua."
       fitness_title: "Centro de Fitness"
-      fitness_description: "Localizada a 150m, paga"
+      fitness_description: "Localizada a 150m"
       epicerie_title: "Mercearia"
       epicerie_description: "Localizada a 500m"
 
