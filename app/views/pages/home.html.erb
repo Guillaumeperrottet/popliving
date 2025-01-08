@@ -4,7 +4,7 @@
     <div class="col-lg-6">
       <h1 class="hero-text"><%= t('home.hero.title') %></h1>
       <p class="hero-subtext"><%= t('home.hero.description') %></p>
-      <%= link_to t('home.hero.learn_more'), about_path, class: "btn btn-primary mt-3" %>
+      <%= link_to t('home.hero.learn_more'), about_path, class: "btn btn-primary" %>
     </div>
     <div class="col-lg-6">
       <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1729845225/manger_ensemble_xbgbvh.jpg') %>" alt="<%= t('home.hero.image_alt') %>" class="img-fluid hero-image">
@@ -24,41 +24,78 @@
 </div>
 
 <!--concept section-->
+<div class="container-fluid concept-section d-flex align-items-center justify-content-center">
+  <div class="text-center">
+    <h2 class="mb-4"><%= t('home.concept.title') %></h2>
+    <p class="concept-text mb-4">
+      <%= t('home.concept.description') %>
+    </p>
+    <%= link_to t('home.concept.detail'), concept_path, class: "btn btn-primary" %>
+  </div>
+</div>
+
+<!--rooms section-->
 <div class="container rooms-section">
   <h2 class="text-center mb-5"><%= t('home.rooms.title') %></h2>
   <div class="row text-center">
+    <!-- Room Card 1 -->
     <div class="col-md-4">
-      <%= link_to new_booking_path, class: "room-card-link" do %>
-        <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1734545638/Vue_cuisine_jwha61.png') %>" alt="<%= t('home.rooms.simple_room_image_alt') %>" class="img-fluid mb-3">
-          <h3><%= t('home.rooms.simple_room_title') %></h3>
-          <p><%= simple_format(t('home.rooms.simple_room_description')) %></p>
+      <div class="room-card p-4">
+        <div class="gallery">
+          <a data-fancybox="room-1-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1734545638/Vue_cuisine_jwha61.png') %>">
+            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1734545638/Vue_cuisine_jwha61.png') %>" class="d-block w-100 img-fluid mb-3" alt="<%= t('home.rooms.simple_room_image_alt') %>">
+          </a>
+          <a data-fancybox="room-1-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341044/Vue_salle_bain_zjerru.png') %>">
+            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341044/Vue_salle_bain_zjerru.png') %>" class="d-block w-100 img-fluid d-none" alt="Salle de bain">
+          </a>
+          <a data-fancybox="room-1-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341040/Vue_lit_fenetre_htlsbe.png') %>">
+            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341040/Vue_lit_fenetre_htlsbe.png') %>" class="d-block w-100 img-fluid d-none" alt="Fenêtre et lit">
+          </a>
         </div>
-      <% end %>
+        <h3><%= t('home.rooms.simple_room_title') %></h3>
+        <p><%= simple_format(t('home.rooms.simple_room_description')) %></p>
+      </div>
     </div>
+
+    <!-- Room Card 2 -->
     <div class="col-md-4">
-      <%= link_to new_booking_path, class: "room-card-link" do %>
-        <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276689/inde%CC%81pendant_bgjug7_wt6zb6.png') %>" alt="<%= t('home.rooms.studio_image_alt') %>" class="img-fluid mb-3">
-          <h3><%= t('home.rooms.studio_title') %></h3>
-          <p><%= simple_format(t('home.rooms.studio_description'))%></p>
+      <div class="room-card p-4">
+        <div class="gallery">
+          <a data-fancybox="room-2-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276689/inde%CC%81pendant_bgjug7_wt6zb6.png') %>">
+            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276689/inde%CC%81pendant_bgjug7_wt6zb6.png') %>" class="d-block w-100 img-fluid mb-3" alt="<%= t('home.rooms.studio_image_alt') %>">
+          </a>
+          <a data-fancybox="room-2-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276690/Vue_balcon_bgjug8.png') %>">
+            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276690/Vue_balcon_bgjug8.png') %>" class="d-block w-100 img-fluid d-none" alt="Balcon">
+          </a>
         </div>
-      <% end %>
+        <h3><%= t('home.rooms.studio_title') %></h3>
+        <p><%= simple_format(t('home.rooms.studio_description')) %></p>
+      </div>
     </div>
+
+    <!-- Room Card 3 -->
     <div class="col-md-4">
-      <%= link_to new_booking_path, class: "room-card-link" do %>
-        <div class="room-card p-4">
-          <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278168/paratge%CC%81_cn7vzz_fgamp3.png') %>" alt="<%= t('home.rooms.shared_apartment_image_alt') %>" class="img-fluid mb-3">
-          <h3><%= t('home.rooms.shared_apartment_title') %></h3>
-          <p><%= simple_format(t('home.rooms.shared_apartment_description')) %></p>
+      <div class="room-card p-4">
+        <div class="gallery">
+          <a data-fancybox="room-3-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278168/paratge%CC%81_cn7vzz_fgamp3.png') %>">
+            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278168/paratge%CC%81_cn7vzz_fgamp3.png') %>" class="d-block w-100 img-fluid mb-3" alt="<%= t('home.rooms.shared_apartment_image_alt') %>">
+          </a>
+          <a data-fancybox="room-3-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278170/Vue_shared_balcony_fgamp5.png') %>">
+            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278170/Vue_shared_balcony_fgamp5.png') %>" class="d-block w-100 img-fluid d-none" alt="Balcon partagé">
+          </a>
         </div>
-      <% end %>
+        <h3><%= t('home.rooms.shared_apartment_title') %></h3>
+        <p><%= simple_format(t('home.rooms.shared_apartment_description')) %></p>
+      </div>
     </div>
   </div>
-  <div class="text-center mt-5">
-    <%= link_to t('home.rooms.learn_more'), new_booking_path, class: "btn btn-primary" %>
+  <!-- Bouton centré pour la demande de disponibilité -->
+  <div class="text-center mt-4">
+    <%= link_to t('home.rooms.availability_request'), new_booking_path, class: "btn btn-primary btn-lg" %>
   </div>
 </div>
+
+
 
 <div class="container-fluid services-section d-flex align-items-center justify-content-center">
   <div class="text-center">
