@@ -10,6 +10,7 @@ de:
       description: "Coliving ist für diejenigen, die es genießen, mit anderen zusammenzuleben und Teil einer Gemeinschaft zu sein. Wir teilen unseren Lebensraum, um Verbindungen zu schaffen, Erfahrungen auszutauschen und als Gemeinschaft gemeinsam zu wachsen."
       detail: "Details"
     rooms:
+      availability_request: "Verfügbarkeitsanfrage"
       title: "Unsere Zimmer"
       simple_room_title: "Einzelzimmer"
       simple_room_description: |

@@ -4,6 +4,19 @@ import "controllers"
 import "@popperjs/core"
 import "bootstrap"
 
+document.addEventListener("turbo:load", function () {
+  if (typeof Fancybox !== "undefined") {
+    console.log("Fancybox loaded with Turbo");
+    Fancybox.bind("[data-fancybox]", {
+      // Options personnalisées
+    });
+  } else {
+    console.error("Fancybox is not loaded");
+  }
+});
+
+
+
 // Pour cacher la navbar au défilement
 document.addEventListener("turbo:load", function() {
   const navbar = document.querySelector(".navbar");
