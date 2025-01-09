@@ -1,4 +1,4 @@
-<div class="container-fluid services-section d-flex align-items-center justify-content-center">
+<!-- <div class="container-fluid services-section d-flex align-items-center justify-content-center">
   <div class="text-center">
     <h2 class="concept-title"><%= t('concept.services.title') %></h2>
     <div class="row text-center">
@@ -12,4 +12,100 @@
       <% end %>
     </div>
   </div>
+</div> -->
+<!-- <div class="container-fluid services-section d-flex align-items-center justify-content-center">
+  <div class="text-center">
+    <h2 class="concept-title"><%= t('concept.services.title') %></h2>
+    <div class="row g-4">
+      <% ["flexible", "cohabitation", "services", "common_areas", "peaceful"].each do |card| %>
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+          <div class="service-card">
+
+            <img src="<%= @concept_images[card] %>" alt="<%= t("concept.cards.#{card}.title") %>" class="card-img">
+
+            <h4 class="card-title"><%= t("concept.cards.#{card}.title") %></h4>
+
+            <p class="card-description"><%= t("concept.cards.#{card}.description") %></p>
+
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div> -->
+
+<div class="concept-hero-section d-flex align-items-center justify-content-center flex-column">
+  <h1 class="concept-hero-title"><%= t('concept.services.title') %></h1>
+  <h2 class="concept-hero-dynamic-text"></h2>
 </div>
+
+<div class="container-fluid concept-services-section d-flex align-items-center justify-content-center">
+  <div class="text-center">
+    <div class="row g-4">
+      <% ["flexible", "cohabitation", "services", "common_areas", "peaceful"].each do |card| %>
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+          <div class="concept-service-card concept-hidden">
+            <img src="<%= @concept_images[card] %>" alt="<%= t("concept.cards.#{card}.title") %>" class="concept-card-img">
+            <h4 class="concept-card-title"><%= t("concept.cards.#{card}.title") %></h4>
+            <p class="concept-card-description"><%= t("concept.cards.#{card}.description") %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const serviceCards = document.querySelectorAll('.concept-service-card');
+    // console.log("Cartes détectées :", serviceCards); // Vérifie que les cartes sont trouvées dans le DOM
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // console.log("Carte observée :", entry.target); // Vérifie si chaque carte est observée
+        if (entry.isIntersecting) {
+          console.log("Carte en vue :", entry.target); // Vérifie si la carte est visible
+          entry.target.classList.add('concept-visible');
+          entry.target.classList.remove('concept-hidden');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    serviceCards.forEach((card) => observer.observe(card));
+  });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dynamicText = document.querySelector('.concept-hero-dynamic-text');
+  const messages = [
+    "Vivez différemment.",
+    "Partagez des espaces uniques.",
+    "Simplifiez votre quotidien.",
+  ];
+  let index = 0;
+
+  function changeText() {
+    // Retire la classe 'animate' pour pouvoir la réappliquer et redéclencher l'animation
+    dynamicText.classList.remove('animate');
+
+    // Force le reflow pour réinitialiser l'animation
+    void dynamicText.offsetWidth;
+
+    // Change le texte
+    dynamicText.textContent = messages[index];
+
+    // Réapplique la classe 'animate' pour déclencher l'animation
+    dynamicText.classList.add('animate');
+
+    // Prépare le prochain index
+    index = (index + 1) % messages.length;
+  }
+
+  // Appel initial
+  changeText();
+
+  // Change le texte toutes les 3 secondes
+  setInterval(changeText, 3000);
+});
+
+
+</script>
