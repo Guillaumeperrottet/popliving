@@ -1,9 +1,11 @@
 .faq-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: calc(-100px + var(--navbar-height)); /* Ajuste selon la hauteur de votre navbar */
-  text-align: center;
+  position: sticky; /* Rend le titre fixe */
+  top: 0; /* Distance par rapport au haut de la page */
+  z-index: 1050; /* Assure que le titre reste au-dessus des autres éléments */
+  background-color: #f8f9fa; /* Même couleur que le fond pour un rendu harmonieux */
+  padding: 15px 0; /* Ajoute de l'espacement autour du titre */
+  margin-bottom: 20px; /* Garde un écart visuel avec l'accordéon */
+  text-align: center; /* Centre le texte */
 }
 
 .faq-section {
@@ -44,6 +46,7 @@
   .faq-title {
     font-size: 2rem; /* Réduit la taille du titre */
     margin-top: -50px; /* Ajuste le positionnement pour mobile */
+    padding: 10px 0; /* Diminue l'espacement */
   }
 
   .faq-section {
