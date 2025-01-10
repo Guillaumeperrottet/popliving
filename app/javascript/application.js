@@ -58,10 +58,6 @@ document.addEventListener("turbo:load", () => {
   serviceCards.forEach((card) => observer.observe(card));
 });
 
-document.addEventListener("turbo:load", () => {
-  window.scrollTo(0, 0); // Force le défilement en haut
-});
-
 // Texte dynamique
 document.addEventListener("turbo:load", () => {
   const dynamicText = document.querySelector(".concept-hero-dynamic-text");
