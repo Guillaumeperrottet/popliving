@@ -25,4 +25,7 @@ class PagesController < ApplicationController
     }
   end
 
+  def situation
+  end
+
 end

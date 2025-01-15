@@ -79,6 +79,7 @@ fr:
   navbar:
     home: "Accueil"
     concept: "Concept"
+    situation: "Situation"
     about: "FAQ"
     contact: "Contact"
     book_now: "Demande de disponibilité"
