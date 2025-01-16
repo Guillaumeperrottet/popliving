@@ -80,6 +80,7 @@ es:
   navbar:
     home: "Inicio"
     concept: "Concepto"
+    situation: "Situación"
     about: "Acerca de"
     contact: "Contacto"
     book_now: "Solicitud de disponibilidad"
