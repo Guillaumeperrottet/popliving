@@ -12,14 +12,22 @@
   </div>
 
   <!-- Section avec la carte Google Maps -->
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.20936846188!2d7.071833416125447!3d46.63472387913157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e9e9a54bf93bb%3A0x763b31a3e1f894e2!2sRoute%20de%20la%20Gruy%C3%A8re%2045%2C%201632%20Riaz!5e0!3m2!1sen!2sch!4v1234567890"
-      width="100%"
-      height="450"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+<div class="map-container" id="map">
+  <div class="map-directions">
+    <a
+      href="https://www.google.com/maps/dir/?api=1&destination=Route+de+la+Gruyère+45,+1632+Riaz"
+      target="_blank"
+      class="btn-directions"
+    >
+      Obtenir l'itinéraire
+    </a>
   </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d203.0971976731819!2d7.061913290834878!3d46.639892668122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sch!4v1737033990372!5m2!1sfr!2sch"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
 </div>
