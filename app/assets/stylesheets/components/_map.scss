@@ -1,0 +1,35 @@
+.map-container {
+  position: relative;
+  margin: 20px; /* Ajoute de l'espace autour de la carte */
+  border: 2px solid #ddd; /* Bordure légère autour de la carte */
+  border-radius: 10px; /* Coins arrondis */
+  overflow: hidden; /* Assure que tout reste à l'intérieur du conteneur */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+
+  #map {
+    height: 300px; /* Hauteur ajustée pour une petite carte */
+    width: 100%; /* La carte prend toute la largeur */
+    z-index: -1;
+  }
+
+  .directions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+    .fa-directions {
+      font-size: 24px;
+      color: #007bff; /* Couleur des flèches */
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #0056b3; /* Couleur au survol */
+      }
+    }
+  }
+}

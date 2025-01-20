@@ -1,9 +1,9 @@
-<div class="concept-hero-section d-flex align-items-center justify-content-center flex-column">
+<div class="concept-hero-section d-flex align-items-center justify-content-center flex-column" data-controller="dynamic-text">
   <h1 class="concept-hero-title"><%= t('concept.services.title') %></h1>
   <h2 class="concept-hero-dynamic-text"></h2>
 </div>
 
-<div class="container-fluid concept-services-section d-flex align-items-center justify-content-center">
+<div class="container-fluid concept-services-section d-flex align-items-center justify-content-center" data-controller="cards">
   <div class="text-center">
     <div class="row g-4">
       <% ["flexible", "cohabitation", "services", "common_areas", "peaceful"].each do |card| %>
