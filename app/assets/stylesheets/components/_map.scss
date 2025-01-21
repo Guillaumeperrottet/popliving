@@ -33,19 +33,3 @@
     }
   }
 }
-
-/* Media query pour les écrans plus petits */
-@media (max-width: 768px) {
-  .map-container {
-    margin: 5px;
-    #map {
-      height: 150px; /* Réduit encore la hauteur pour les petits écrans */
-    }
-
-    .directions {
-      .fa-directions {
-        font-size: 16px; /* Flèches encore plus petites */
-      }
-    }
-  }
-}
