@@ -16,6 +16,23 @@
   }
 }
 
+.address-link {
+  display: none; /* Masque l'adresse par défaut */
+  font-size: 1.2rem; /* Taille du texte de l'adresse */
+  margin-top: 20px;
+
+  a {
+    color: #007bff; /* Couleur du lien */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0056b3; /* Couleur au survol */
+    }
+  }
+}
+
 
 .directions {
   position: absolute;
@@ -37,26 +54,17 @@
     }
   }
 }
-  /* Media queries pour les mobiles */
+  /* Media query pour mobile */
   @media (max-width: 768px) {
-    .map-container {
-      height: 100vh; /* La carte prend toute la hauteur de l'écran */
-      margin: 0; /* Supprime les marges inutiles */
-      padding: 0;
-    }
-
     #map {
-      height: 80%; /* La carte occupe 80% de l'écran */
-      width: 90%; /* Ajoute un espace sur les côtés */
-      margin: auto;
+      display: none; /* Masque la carte sur mobile */
     }
 
-    .directions {
-      top: 579px;
-      right: 74px;
-      padding: 8px;
-      .fa-directions {
-        font-size: 25px; /* Taille réduite */
-      }
+    .directions{
+      display: none;
+    }
+
+    .address-link {
+      display: block; /* Affiche l'adresse sur mobile */
+    }
   }
-}

@@ -61,19 +61,6 @@
     overflow: visible; // Assure que tout le texte soit visible
   }
 
-  .map-container {
-    margin-top: 0px; /* Réduit l'espacement au-dessus de la carte */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    #map {
-      height: 90%; /* La carte prend 90% de la hauteur de l'écran */
-      width: 90%; /* Ajoute un léger espace autour */
-      margin: auto; /* Centre horizontalement */
-    }
-  }
-
   .situation-page {
     min-height: 100vh; /* Assure que le conteneur occupe tout l'écran */
   }
