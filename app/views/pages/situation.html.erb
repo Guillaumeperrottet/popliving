@@ -6,17 +6,16 @@
   <div class="text-container">
     <div class="description-flex-grow">
       <p>
-        Situé à Riaz, au cœur de la Gruyère, cet immeuble bénéficie d'une localisation idéale. Vous trouverez à proximité des écoles, des commerces, et des transports publics facilitant vos déplacements dans toute la région.
+        <%= t('situation.description') %>
       </p>
     </div>
   </div>
 
   <!-- Section avec la carte Google Maps -->
-<div class="map-container">
-  <div id="map" data-controller="google-maps" data-google-maps-target="map"></div>
-<div class="directions">
-  <i class="fas fa-directions fa-2x"></i>
-</div>
-
-
+  <div class="map-container">
+    <div id="map" data-controller="google-maps" data-google-maps-target="map"></div>
+    <div class="directions">
+      <i class="fas fa-directions fa-2x"></i>
+    </div>
+  </div>
 </div>

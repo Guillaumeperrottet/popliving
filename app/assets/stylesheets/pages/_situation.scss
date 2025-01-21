@@ -80,4 +80,20 @@
   }
 }
 
-//---------------
+/* Media query pour mobile */
+@media (max-width: 768px) {
+  .situation-page .background-image {
+    display: none; /* Masque l'image sur les petits écrans */
+  }
+
+  .text-container {
+    padding: 20px; /* Réduit les marges pour s'adapter à l'écran */
+  }
+
+  .map-container {
+    margin-top: 50px; /* Réduit l'espacement au-dessus de la carte */
+    #map {
+      height: 300px; /* Taille par défaut de la carte sur mobile */
+    }
+  }
+}

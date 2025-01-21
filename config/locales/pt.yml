@@ -147,3 +147,6 @@ pt:
       peaceful:
         title: "Ambiente Tranquilo"
         description: "Viva em um ambiente calmo e inspirador, perfeito para recarregar as energias e se concentrar no que realmente importa, entre a cidade e as montanhas."
+
+  situation:
+    description: "Localizado em Riaz, no coração de Gruyère, este edifício possui uma localização ideal. Nas proximidades, você encontrará escolas, lojas e transporte público, facilitando a locomoção pela região."
