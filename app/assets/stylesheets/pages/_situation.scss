@@ -37,48 +37,6 @@
   overflow: visible; // Assure que tout le texte soit visible
 }
 
-.access-button {
-  margin-top: 20px;
-
-  .btn {
-    padding: 12px 24px;
-    background-color: #ff5722;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #e64a19;
-    }
-  }
-}
-
-.map-directions {
-  position: absolute;
-  top: 10px; /* Distance depuis le haut */
-  left: 10px; /* Distance depuis la gauche */
-  z-index: 100; /* Assurez que le bouton est visible au-dessus de la carte */
-
-  .btn-directions {
-    display: inline-block;
-    background-color: #ff5722;
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #e64a19;
-    }
-  }
-}
 
 /* Media query pour mobile */
 @media (max-width: 768px) {
