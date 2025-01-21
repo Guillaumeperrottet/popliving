@@ -44,7 +44,7 @@ export default class extends Controller {
 
     const map = new google.maps.Map(this.mapTarget, {
       zoom: 16,
-      center: { lat: 46.64008648981988, lng: 7.0617587396999495 },
+      center: { lat: 46.63985915698203, lng: 7.06178194960894 },
       mapId: "b4f4c0c8903d1d38",
       gestureHandling: "cooperative", // Permet une meilleure interaction sur mobile
     });
@@ -52,7 +52,7 @@ export default class extends Controller {
     // Utiliser AdvancedMarkerElement pour le marqueur
     const marker = new google.maps.marker.AdvancedMarkerElement({
       map: map,
-      position: { lat: 46.64008648981988, lng: 7.0617587396999495 },
+      position: { lat: 46.63985915698203, lng: 7.06178194960894 },
       title: "Votre emplacement", // Info-bulle au survol
     });
 

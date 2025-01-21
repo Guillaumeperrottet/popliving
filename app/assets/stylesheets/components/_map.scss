@@ -1,5 +1,4 @@
 .map-container {
-  position: relative;
   margin: 20px; /* Ajoute de l'espace autour de la carte */
   border: 2px solid #ddd; /* Bordure légère autour de la carte */
   border-radius: 10px; /* Coins arrondis */
@@ -9,7 +8,6 @@
   #map {
     height: 300px; /* Hauteur ajustée pour une petite carte */
     width: 100%; /* La carte prend toute la largeur */
-    z-index: -1;
   }
 
   .directions {
