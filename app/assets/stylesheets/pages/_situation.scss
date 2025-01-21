@@ -16,11 +16,17 @@
     background-size: cover;
     background-position: center;
     z-index: -1; // Place l'image derrière le texte
+
+    /* Media query pour les téléphones */
+    @media (max-width: 768px) {
+      background-image: url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1737387073/A3801203-A666-4D69-8E3F-F83DC637A3A0_1_105_c_wqh2fy.jpg'); /* Image pour téléphone */
+      height: 60vh; /* Ajuste la hauteur de l'image sur mobile */
+    }
   }
 
   .text-container {
     position: relative;
-    padding: 50px 20px; // Ajustez selon vos besoins
+    padding-top: 100px;
     z-index: 1; // Place le texte au-dessus de l'image
   }
 
@@ -40,12 +46,19 @@
 
 /* Media query pour mobile */
 @media (max-width: 768px) {
+
   .situation-page .background-image .p {
     display: none; /* Masque l'image sur les petits écrans */
   }
 
   .text-container {
     padding: 20px; /* Réduit les marges pour s'adapter à l'écran */
+  }
+
+  .description-flex-grow {
+    padding-top: 10px;
+    margin-top: 20px;
+    overflow: visible; // Assure que tout le texte soit visible
   }
 
   .map-container {
