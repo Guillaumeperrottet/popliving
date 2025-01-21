@@ -46,6 +46,7 @@ export default class extends Controller {
       zoom: 16,
       center: { lat: 46.64008648981988, lng: 7.0617587396999495 },
       mapId: "b4f4c0c8903d1d38",
+      gestureHandling: "cooperative", // Permet une meilleure interaction sur mobile
     });
 
     // Utiliser AdvancedMarkerElement pour le marqueur

@@ -92,8 +92,13 @@
 
   .map-container {
     margin-top: 50px; /* Réduit l'espacement au-dessus de la carte */
+    height: 100vh;
     #map {
       height: 300px; /* Taille par défaut de la carte sur mobile */
     }
+  }
+
+  .situation-page {
+    min-height: 100vh; /* Assure que le conteneur occupe tout l'écran */
   }
 }
