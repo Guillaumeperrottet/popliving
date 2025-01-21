@@ -82,7 +82,7 @@
 
 /* Media query pour mobile */
 @media (max-width: 768px) {
-  .situation-page .background-image {
+  .situation-page .background-image .p {
     display: none; /* Masque l'image sur les petits écrans */
   }
 
@@ -91,10 +91,15 @@
   }
 
   .map-container {
-    margin-top: 50px; /* Réduit l'espacement au-dessus de la carte */
+    margin-top: 0px; /* Réduit l'espacement au-dessus de la carte */
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     #map {
-      height: 300px; /* Taille par défaut de la carte sur mobile */
+      height: 90%; /* La carte prend 90% de la hauteur de l'écran */
+      width: 90%; /* Ajoute un léger espace autour */
+      margin: auto; /* Centre horizontalement */
     }
   }
 

@@ -1,33 +1,58 @@
 .map-container {
-  margin: 20px; /* Ajoute de l'espace autour de la carte */
-  border: 2px solid #ddd; /* Bordure légère autour de la carte */
-  border-radius: 10px; /* Coins arrondis */
-  overflow: hidden; /* Assure que tout reste à l'intérieur du conteneur */
+  margin: 0 auto; /* Centre horizontalement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto; /* Hauteur par défaut */
+  padding: 10px; /* Ajoute un espace autour sur desktop */
+  border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
 
   #map {
-    height: 300px; /* Hauteur ajustée pour une petite carte */
-    width: 100%; /* La carte prend toute la largeur */
+    height: 400px; /* Taille par défaut sur les grands écrans */
+    width: 100%;
+    border-radius: 8px;
   }
 
   .directions {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
     .fa-directions {
       font-size: 24px;
-      color: #007bff; /* Couleur des flèches */
+      color: #007bff;
       cursor: pointer;
       transition: color 0.3s ease;
 
       &:hover {
-        color: #0056b3; /* Couleur au survol */
+        color: #0056b3;
       }
     }
+  }
+}
+
+/* Media queries pour les mobiles */
+@media (max-width: 768px) {
+  .map-container {
+    height: 100vh; /* La carte prend toute la hauteur de l'écran */
+    margin: 0; /* Supprime les marges inutiles */
+    padding: 0;
+  }
+
+  #map {
+    height: 80%; /* La carte occupe 80% de l'écran */
+    width: 90%; /* Ajoute un espace sur les côtés */
+    margin: auto;
+  }
+
+  .directions {
+    top: 20px; /* Ajuste la position sur mobile */
+    right: 20px;
   }
 }
