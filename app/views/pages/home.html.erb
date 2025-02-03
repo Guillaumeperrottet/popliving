@@ -24,28 +24,23 @@
 </div>
 
 <!--rooms section-->
-<div class="container rooms-section">
+<div class="container rooms-section" data-controller="fancybox">
   <h2 class="text-center mb-5"><%= t('home.rooms.title') %></h2>
   <div class="row text-center">
     <!-- Room Card 1 -->
     <div class="col-md-4">
       <div class="room-card p-4">
         <div class="gallery position-relative">
-          <a data-fancybox="room-1-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1734545638/Vue_cuisine_jwha61.png') %>">
+          <a data-fancybox="room-1-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1734545638/Vue_cuisine_jwha61.png') %>">
             <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1734545638/Vue_cuisine_jwha61.png') %>" class="d-block w-100 img-fluid mb-3" alt="<%= t('home.rooms.simple_room_image_alt') %>">
             <div class="gallery-icon">
               <i class="fas fa-images"></i> galerie
             </div>
           </a>
-          <a data-fancybox="room-1-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341044/Vue_salle_bain_zjerru.png') %>">
-            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341044/Vue_salle_bain_zjerru.png') %>" class="d-block w-100 img-fluid d-none" alt="Salle de bain">
-          </a>
-          <a data-fancybox="room-1-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341040/Vue_lit_fenetre_htlsbe.png') %>">
-            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341040/Vue_lit_fenetre_htlsbe.png') %>" class="d-block w-100 img-fluid d-none" alt="Fenêtre et lit">
-          </a>
-          <a data-fancybox="room-1-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736434955/Vue_toilettes_kzaqam.png') %>">
-            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736434955/Vue_toilettes_kzaqam.png') %>" class="d-block w-100 img-fluid d-none" alt="Fenêtre et lit">
-          </a>
+          <!-- Autres images de la galerie -->
+          <a data-fancybox="room-1-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341044/Vue_salle_bain_zjerru.png') %>" style="display: none;"></a>
+          <a data-fancybox="room-1-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736341040/Vue_lit_fenetre_htlsbe.png') %>" style="display: none;"></a>
+          <a data-fancybox="room-1-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1736434955/Vue_toilettes_kzaqam.png') %>" style="display: none;"></a>
         </div>
         <h3><%= t('home.rooms.simple_room_title') %></h3>
         <p><%= simple_format(t('home.rooms.simple_room_description')) %></p>
@@ -56,15 +51,10 @@
     <div class="col-md-4">
       <div class="room-card p-4">
         <div class="gallery position-relative">
-          <a data-fancybox="room-2-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276689/inde%CC%81pendant_bgjug7_wt6zb6.png') %>">
+          <a data-fancybox="room-2-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276689/inde%CC%81pendant_bgjug7_wt6zb6.png') %>">
             <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276689/inde%CC%81pendant_bgjug7_wt6zb6.png') %>" class="d-block w-100 img-fluid mb-3" alt="<%= t('home.rooms.studio_image_alt') %>">
           </a>
-          <a data-fancybox="room-2-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276690/Vue_balcon_bgjug8.png') %>">
-            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276690/Vue_balcon_bgjug8.png') %>" class="d-block w-100 img-fluid d-none" alt="Balcon">
-            <%# <div class="gallery-icon">
-              <i class="fas fa-images"></i> galerie
-            </div> %>
-          </a>
+          <a data-fancybox="room-2-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730276690/Vue_balcon_bgjug8.png') %>" style="display: none;"></a>
         </div>
         <h3><%= t('home.rooms.studio_title') %></h3>
         <p><%= simple_format(t('home.rooms.studio_description')) %></p>
@@ -75,15 +65,10 @@
     <div class="col-md-4">
       <div class="room-card p-4">
         <div class="gallery position-relative">
-          <a data-fancybox="room-3-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278168/paratge%CC%81_cn7vzz_fgamp3.png') %>">
+          <a data-fancybox="room-3-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278168/paratge%CC%81_cn7vzz_fgamp3.png') %>">
             <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278168/paratge%CC%81_cn7vzz_fgamp3.png') %>" class="d-block w-100 img-fluid mb-3" alt="<%= t('home.rooms.shared_apartment_image_alt') %>">
           </a>
-          <a data-fancybox="room-3-gallery" href="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278170/Vue_shared_balcony_fgamp5.png') %>">
-            <img src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278170/Vue_shared_balcony_fgamp5.png') %>" class="d-block w-100 img-fluid d-none" alt="Balcon partagé">
-            <%# <div class="gallery-icon">
-              <i class="fas fa-images"></i> galerie
-            </div> %>
-          </a>
+          <a data-fancybox="room-3-gallery" data-src="<%= Cloudinary::Utils.cloudinary_url('https://res.cloudinary.com/dafkgjhwt/image/upload/v1730278170/Vue_shared_balcony_fgamp5.png') %>" style="display: none;"></a>
         </div>
         <h3><%= t('home.rooms.shared_apartment_title') %></h3>
         <p><%= simple_format(t('home.rooms.shared_apartment_description')) %></p>
@@ -95,7 +80,6 @@
     <%= link_to t('home.rooms.availability_request'), new_booking_path, class: "btn btn-primary btn-lg" %>
   </div>
 </div>
-
 
 
 <div class="container-fluid services-section d-flex align-items-center justify-content-center">

@@ -12,18 +12,6 @@ eagerLoadControllersFrom("controllers", application);
 
 window.Stimulus = application;
 
-// Fancybox avec Turbo
-document.addEventListener("turbo:load", () => {
-  if (typeof Fancybox !== "undefined") {
-    console.log("Fancybox loaded with Turbo");
-    Fancybox.bind("[data-fancybox]", {
-      // Options personnalisées
-    });
-  } else {
-    console.error("Fancybox is not loaded");
-  }
-});
-
 // Pour cacher la navbar au défilement
 document.addEventListener("turbo:load", () => {
   const navbar = document.querySelector(".navbar");
