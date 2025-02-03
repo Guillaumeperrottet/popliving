@@ -67,6 +67,7 @@
       height: 250px;
       object-fit: cover; /* Coupe l'image pour remplir l'espace */
       border-radius: 8px; // Coins arrondis pour les images
+      cursor: pointer; /* Affiche un doigt lors du survol */
     }
 
     h3 {
